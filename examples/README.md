@@ -2,11 +2,11 @@
 
 Annotated, realistic sessions showing the skills in action. Each example demonstrates the workflow its skill recommends: context first, iteration, verification before spending money.
 
-| Example | Skill demonstrated | Shows |
-|---|---|---|
-| [Diagnosing a P0420 without wasting money](./obd2-p0420-diagnosis.md) | OBD-II Diagnostic Assistant | Code interpretation, live-data reasoning, test-before-parts discipline |
-| [Inspecting a used car end-to-end](./used-car-inspection.md) | Used Car Inspector | Pre-viewing research, checklist use, findings → negotiation |
-| [Building a catch-up maintenance plan](./maintenance-catchup-plan.md) | Vehicle Maintenance Planner | Unknown-history planning, prioritization, DIY vs. shop split |
+| Example | Skill demonstrated | Shows | 日本語 |
+|---|---|---|---|
+| [Diagnosing a P0420 without wasting money](./obd2-p0420-diagnosis.md) | OBD-II Diagnostic Assistant | Code interpretation, live-data reasoning, test-before-parts discipline | [日本語版](./obd2-p0420-diagnosis.ja.md) |
+| [Inspecting a used car end-to-end](./used-car-inspection.md) | Used Car Inspector | Pre-viewing research, checklist use, findings → negotiation | [日本語版](./used-car-inspection.ja.md) |
+| [Building a catch-up maintenance plan](./maintenance-catchup-plan.md) | Vehicle Maintenance Planner | Unknown-history planning, prioritization, DIY vs. shop split | [日本語版](./maintenance-catchup-plan.ja.md) |
 
 ## Notes on these examples
 

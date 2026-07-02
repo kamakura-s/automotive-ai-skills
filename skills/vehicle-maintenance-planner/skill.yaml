@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: vehicle-maintenance-planner
+title: "Vehicle Maintenance Planner"
+summary: >-
+  Builds preventive maintenance schedules tailored to vehicle, mileage, climate, and driving pattern, including catch-up plans for unknown history.
+audience: "All vehicle owners, fleet managers"
+tags: [maintenance, schedule, fluids, severe-service, budgeting]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [used-car-inspector, mechanic-assistant, ev-assistant, fleet-manager]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

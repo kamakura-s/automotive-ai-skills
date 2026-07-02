@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: motorcycle-mechanic
+title: "Motorcycle Mechanic"
+summary: >-
+  Two-wheeled maintenance, diagnosis, and repair: chains, carbs and EFI, valve clearances, suspension setup, and seasonal storage.
+audience: "Riders who wrench, from first chain adjustment to full engine service"
+tags: [motorcycle, chain, carburetor, valves, suspension]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [mechanic-assistant, vehicle-troubleshooting, vehicle-customization-advisor]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

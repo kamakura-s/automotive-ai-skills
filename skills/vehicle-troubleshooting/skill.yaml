@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: vehicle-troubleshooting
+title: "Vehicle Troubleshooting"
+summary: >-
+  Symptom-first differential diagnosis for noises, vibrations, smells, leaks, warning lights, and drivability problems.
+audience: "All drivers, technicians wanting a structured second opinion"
+tags: [symptoms, noise, vibration, leaks, diagnosis]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [obd2-diagnostic-assistant, mechanic-assistant, motorcycle-mechanic]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: ev-assistant
+title: "EV Assistant"
+summary: >-
+  Covers EV ownership: charging strategy, battery health and degradation, range management, EV-specific maintenance, and used-EV buying.
+audience: "EV shoppers, owners, and transitioning technicians"
+tags: [ev, charging, battery, range, chademo]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [used-car-inspector, vehicle-maintenance-planner, vehicle-troubleshooting]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

@@ -12,6 +12,10 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 | [Vehicle Customization Advisor](./vehicle-customization-advisor/) | Modification planning, fitment, build order, legality | Enthusiasts |
 | [EV Assistant](./ev-assistant/) | Charging, battery health, range, EV maintenance | EV owners & shoppers |
 | [Motorcycle Mechanic](./motorcycle-mechanic/) | Two-wheeled maintenance, diagnosis, and setup | Riders who wrench |
+| [Diesel Specialist](./diesel-specialist/) | Common rail, DPF/EGR/SCR, glow plugs, diesel diagnosis | Diesel owners & fleets |
+| [Classic Car Restorer](./classic-car-restorer/) | Points, carburetors, rust, parts sourcing, restoration strategy | Classic owners & restorers |
+| [Fleet Manager](./fleet-manager/) | Multi-vehicle scheduling, cost tracking, downtime planning | Businesses & multi-car households |
+| [Tire & Wheel Advisor](./tire-wheel-advisor/) | Sizing math, fitment, seasonal strategy, wear diagnosis, TPMS | Anyone buying tires or wheels |
 
 ## Which skill do I need?
 
@@ -22,8 +26,16 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 - **"Should I buy this car?"** → Used Car Inspector (plus EV Assistant for EVs)
 - **"I want to modify it"** → Vehicle Customization Advisor
 - **"EV-specific question"** → EV Assistant
+- **"DPF / AdBlue / diesel-specific"** → Diesel Specialist
+- **"It's a classic — points, carbs, rust"** → Classic Car Restorer
+- **"I manage several vehicles"** → Fleet Manager
+- **"Tires, wheels, sizing, TPMS"** → Tire & Wheel Advisor
 
 Skills are designed to hand off to each other — Troubleshooting narrows the cause, Mechanic Assistant executes the fix, Maintenance Planner prevents the next failure.
+
+## Machine-Readable Definitions
+
+Every skill folder also contains a `skill.yaml` with structured metadata (name, summary, tags, languages, related skills) for agent frameworks and tooling. The schema is documented in the [Skill Authoring Guide](../docs/skill-authoring-guide.md#machine-readable-definitions-skillyaml); usage examples are in [`integrations/`](../integrations/).
 
 ## Adding a New Skill
 

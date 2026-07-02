@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: used-car-inspector
+title: "Used Car Inspector"
+summary: >-
+  Guides pre-purchase evaluation: model-specific checklists, red-flag detection, test-drive interpretation, and negotiation support.
+audience: "Used car buyers at any experience level"
+tags: [used-car, inspection, checklist, negotiation, vin]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [vehicle-maintenance-planner, vehicle-troubleshooting, ev-assistant]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

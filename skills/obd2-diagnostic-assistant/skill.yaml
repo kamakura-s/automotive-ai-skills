@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: obd2-diagnostic-assistant
+title: "OBD-II Diagnostic Assistant"
+summary: >-
+  Interprets diagnostic trouble codes, freeze frame, and live sensor data, turning scanner output into a prioritized test plan.
+audience: "Anyone with a code reader, professional technicians"
+tags: [obd2, dtc, diagnostics, fuel-trim, emissions]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [vehicle-troubleshooting, mechanic-assistant, ev-assistant]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

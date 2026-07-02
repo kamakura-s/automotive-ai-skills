@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: classic-car-restorer
+title: "Classic Car Restorer"
+summary: >-
+  Vintage-vehicle work: points ignition, carburetors, rust assessment, obsolete parts sourcing, and restoration strategy.
+audience: "Classic buyers, restorers, and keepers of older vehicles"
+tags: [classic, restoration, carburetor, points-ignition, rust]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [mechanic-assistant, used-car-inspector, vehicle-customization-advisor]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

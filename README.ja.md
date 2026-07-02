@@ -24,7 +24,7 @@
 
 ## 特徴
 
-- 🔧 診断・修理・整備・購入・カスタム・EV・バイクをカバーする**8つのスキル**
+- 🔧 診断・修理・整備・購入・カスタム・EV・ディーゼル・旧車・フリート・タイヤ・バイクをカバーする**12のスキル**
 - 📋 助言の前に適切な車両情報を集める**構造化ワークフロー**
 - ⚠️ **安全第一の設計** — 全スキルが限界を明記し、安全に関わる作業は専門家に委ねる方針
 - 🧩 **スキル間の連携** — トラブルシュート → 診断 → 修理 → 予防整備へと引き継ぎ可能
@@ -46,11 +46,16 @@
 | 🏁 [Vehicle Customization Advisor（カスタム相談）](./skills/vehicle-customization-advisor/README.ja.md) | 改造計画、フィッティング計算、施工順序、車検・法規面の注意 |
 | ⚡ [EV Assistant（EVアシスタント）](./skills/ev-assistant/README.ja.md) | 充電戦略、バッテリー健全性、航続距離、EV特有の整備 |
 | 🏍️ [Motorcycle Mechanic（バイク整備）](./skills/motorcycle-mechanic/README.ja.md) | 二輪の整備・診断、キャブ/FI、バルブ、サスセッティング |
+| 🛢️ [Diesel Specialist（ディーゼル専門）](./skills/diesel-specialist/README.ja.md) | コモンレール、DPF/EGR/アドブルー、グロープラグ、ターボ |
+| 🕰️ [Classic Car Restorer（旧車レストア）](./skills/classic-car-restorer/README.ja.md) | ポイント点火、キャブレター、錆診断、絶版部品の調達 |
+| 🚛 [Fleet Manager（フリート管理）](./skills/fleet-manager/README.ja.md) | 複数車両の整備スケジュール、コスト追跡、稼働計画 |
+| 🛞 [Tire & Wheel Advisor（タイヤ&ホイール）](./skills/tire-wheel-advisor/README.ja.md) | サイズ計算、フィッティング、夏冬戦略、摩耗診断、TPMS |
 
 ## 日本のユーザー向けコンテンツ
 
 - 📗 [日本のユーザー向けガイド](./docs/ja/japan-guide.md) — 米国向け記述の読み替え表、軽自動車・国内中古車市場での使い方、用語対訳
 - ✅ [車検前セルフチェックリスト](./docs/ja/shaken-checklist.md) — 車検（継続検査）前の点検項目と、AIスキルとの組み合わせ方
+- 💬 会話例の日本語版 — [P0420の診断](./examples/obd2-p0420-diagnosis.ja.md) / [中古車チェック](./examples/used-car-inspection.ja.md) / [キャッチアップ整備計画](./examples/maintenance-catchup-plan.ja.md)
 
 ## インストール
 
@@ -90,20 +95,27 @@ automotive-ai-skills/
 ├── SECURITY.md               # セキュリティポリシー
 ├── docs/                     # ガイド・FAQ・免責事項
 │   └── ja/                   # 日本向け: 車検チェックリスト、日本ユーザーガイド
-├── examples/                 # 会話例
-└── skills/                   # 8つのスキル（各フォルダに README.md と README.ja.md）
+├── data/known-issues/        # 車種別の既知問題データベース（コミュニティ投稿）
+├── examples/                 # 会話例（日英）
+├── integrations/             # Claude Projectテンプレート、統合システムプロンプト
+└── skills/                   # 12スキル（各フォルダに README.md / README.ja.md / skill.yaml）
 ```
 
 ## ロードマップ
 
-- [ ] ディーゼル専門スキル（コモンレール、DPF/EGR/SCR）
-- [ ] 旧車レストアスキル（ポイント点火、キャブレター、錆診断）
-- [ ] フリート管理スキル（複数車両のスケジュール・コスト管理）
-- [ ] タイヤ＆ホイールアドバイザースキル
-- [x] スキル本文の日本語翻訳（全8スキル完了）
-- [ ] エージェントフレームワーク向けの構造化スキル定義（YAMLフロントマター）
-- [ ] 会話例（examples/）の日本語翻訳
-- [ ] コミュニティによる車種別既知問題データベース
+- [x] ディーゼル専門スキル（コモンレール、DPF/EGR/SCR）
+- [x] 旧車レストアスキル（ポイント点火、キャブレター、錆診断）
+- [x] フリート管理スキル（複数車両のスケジュール・コスト管理）
+- [x] タイヤ＆ホイールアドバイザースキル
+- [x] スキル本文の日本語翻訳（全12スキル完了）
+- [x] エージェントフレームワーク向けの構造化スキル定義（各スキルの `skill.yaml`）
+- [x] 会話例（examples/）の日本語翻訳
+- [x] 車種別既知問題データベースの受け皿（[`data/known-issues/`](./data/known-issues/)、テンプレート+初回エントリ。**投稿募集中!**）
+- [x] 連携サンプル（[`integrations/`](./integrations/)：Claude Projectテンプレート、統合システムプロンプト）
+- [ ] 商用車・トラックスキル（エアブレーキ、運行記録、積載）
+- [ ] 板金・塗装スキル（へこみ評価、色合わせ、DIYの限界）
+- [ ] 既知問題データベースの拡充（コミュニティ主導）
+- [ ] 他言語への展開
 
 ## コントリビューション
 

@@ -25,7 +25,7 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 
 ## Features
 
-- 🔧 **8 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, and motorcycles
+- 🔧 **12 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, and motorcycles
 - 📋 **Structured workflows** that gather the right vehicle context before advising
 - ⚠️ **Safety-first design** — every skill states its limitations and defers safety-critical work appropriately
 - 🧩 **Composable** — skills hand off to each other (troubleshoot → diagnose → repair → maintain)
@@ -45,6 +45,10 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 | 🏁 [Vehicle Customization Advisor](./skills/vehicle-customization-advisor/) | Modification planning, fitment math, build order, legality flags |
 | ⚡ [EV Assistant](./skills/ev-assistant/) | Charging strategy, battery health, range, EV-specific maintenance |
 | 🏍️ [Motorcycle Mechanic](./skills/motorcycle-mechanic/) | Two-wheeled maintenance, carbs and EFI, valves, suspension setup |
+| 🛢️ [Diesel Specialist](./skills/diesel-specialist/) | Common rail, DPF/EGR/SCR aftertreatment, glow plugs, turbos |
+| 🕰️ [Classic Car Restorer](./skills/classic-car-restorer/) | Points ignition, carburetors, rust assessment, parts sourcing |
+| 🚛 [Fleet Manager](./skills/fleet-manager/) | Multi-vehicle scheduling, cost tracking, downtime planning |
+| 🛞 [Tire & Wheel Advisor](./skills/tire-wheel-advisor/) | Sizing math, fitment, seasonal strategy, wear diagnosis, TPMS |
 
 Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#which-skill-do-i-need).
 
@@ -100,13 +104,16 @@ automotive-ai-skills/
 │   ├── safety-disclaimer.md  # Full safety and liability notes
 │   ├── faq.md                # Frequently asked questions
 │   └── ja/                   # Japan-specific guides (shaken checklist, market notes)
-├── examples/
+├── data/
+│   └── known-issues/         # Community model-specific known-issue entries
+├── examples/                 # Full example conversations (EN + JA)
 │   ├── README.md
-│   ├── obd2-p0420-diagnosis.md       # Full example conversation
-│   ├── used-car-inspection.md        # Full example conversation
-│   └── maintenance-catchup-plan.md   # Full example conversation
-└── skills/
-    ├── README.md             # Skills index and selection guide
+│   ├── obd2-p0420-diagnosis.md       (+ .ja.md)
+│   ├── used-car-inspection.md        (+ .ja.md)
+│   └── maintenance-catchup-plan.md   (+ .ja.md)
+├── integrations/             # Claude Project template, combined system prompt
+└── skills/                   # 12 skills; each folder has README.md,
+    ├── README.md             #   README.ja.md, and skill.yaml
     ├── mechanic-assistant/
     ├── obd2-diagnostic-assistant/
     ├── vehicle-maintenance-planner/
@@ -114,7 +121,11 @@ automotive-ai-skills/
     ├── vehicle-troubleshooting/
     ├── vehicle-customization-advisor/
     ├── ev-assistant/
-    └── motorcycle-mechanic/
+    ├── motorcycle-mechanic/
+    ├── diesel-specialist/
+    ├── classic-car-restorer/
+    ├── fleet-manager/
+    └── tire-wheel-advisor/
 ```
 
 ## Example Conversations
@@ -127,15 +138,19 @@ Full annotated conversations live in [`examples/`](./examples/):
 
 ## Roadmap
 
-- [ ] **Diesel Specialist** skill (common rail, DPF/EGR/SCR systems, glow plugs)
-- [ ] **Classic Car Restorer** skill (points ignition, carburetors, rust assessment, parts sourcing)
-- [ ] **Fleet Manager** skill (multi-vehicle scheduling, cost tracking, downtime planning)
-- [ ] **Tire & Wheel Advisor** skill (deeper sizing, seasonal strategy, TPMS)
-- [x] Translated skill content — Japanese versions of all 8 skills (`README.ja.md` in each skill folder)
-- [ ] Structured skill definitions (YAML frontmatter) for direct agent-framework consumption
-- [ ] Japanese translations of example conversations
-- [ ] Community-contributed model-specific known-issue databases
-- [ ] Example integrations: Claude Project templates and system-prompt bundles
+- [x] **Diesel Specialist** skill (common rail, DPF/EGR/SCR systems, glow plugs)
+- [x] **Classic Car Restorer** skill (points ignition, carburetors, rust assessment, parts sourcing)
+- [x] **Fleet Manager** skill (multi-vehicle scheduling, cost tracking, downtime planning)
+- [x] **Tire & Wheel Advisor** skill (deeper sizing, seasonal strategy, TPMS)
+- [x] Translated skill content — Japanese versions of all 12 skills (`README.ja.md` in each skill folder)
+- [x] Structured skill definitions (`skill.yaml` per skill) for direct agent-framework consumption
+- [x] Japanese translations of example conversations
+- [x] Community known-issue database — structure, template, and first entry in [`data/known-issues/`](./data/known-issues/); **entries wanted!**
+- [x] Example integrations: Claude Project template and combined system prompt in [`integrations/`](./integrations/)
+- [ ] Commercial vehicle / truck skill (air brakes, tachographs, load securing)
+- [ ] Body & paint skill (dent assessment, paint matching, DIY correction limits)
+- [ ] Expanded known-issues coverage across popular platforms (community-driven)
+- [ ] Skill content in additional languages
 
 Have an idea? [Open an issue](../../issues) with the `enhancement` label.
 

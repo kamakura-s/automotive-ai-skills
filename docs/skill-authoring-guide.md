@@ -16,10 +16,31 @@ A skill earns its place when it satisfies all of these:
 ```text
 skills/
 └── your-skill-name/        # kebab-case, descriptive
-    └── README.md           # the skill definition
+    ├── README.md           # the skill definition (required core)
+    ├── README.ja.md        # Japanese version (required for merged skills)
+    └── skill.yaml          # machine-readable metadata (see below)
 ```
 
-Skills may add supporting files later (checklists, structured definitions), but `README.md` is the required core.
+## Machine-readable definitions (skill.yaml)
+
+Each skill folder contains a `skill.yaml` for agent frameworks and tooling:
+
+```yaml
+schema_version: 1            # bump only on breaking schema changes
+name: your-skill-name        # must match the folder name
+title: "Your Skill Name"
+summary: >-
+  One or two sentences; used for routing and skill registries.
+audience: "Who this is for"
+tags: [lowercase, kebab-case, searchable, terms]
+languages:                   # relative paths to each language's entry file
+  en: README.md
+  ja: README.ja.md
+related: [other-skill-names] # must reference existing skill folder names
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."
+```
+
+The YAML carries metadata only — the README remains the source of truth for skill content. Keep `summary` and `tags` in sync when the README's scope changes.
 
 ## Required README structure
 
@@ -86,7 +107,9 @@ The most important section. Must cover, as applicable:
 1. `skills/README.md` — add a row to the index table and, if appropriate, the "Which skill do I need?" list
 2. `README.md` — add a row to the Skills table (and remove it from Roadmap if it was listed)
 3. `README.ja.md` — add the corresponding row (English name + short Japanese gloss is fine)
-4. `CHANGELOG.md` — add an entry under **[Unreleased]**
+4. `skill.yaml` — create it per the schema above; add your skill to existing skills' `related` lists where the handoff is real
+5. `README.ja.md` in the skill folder — a Japanese version is required before merge (maintainers can help translate; open the PR and say so)
+6. `CHANGELOG.md` — add an entry under **[Unreleased]**
 
 ## Quality checklist
 

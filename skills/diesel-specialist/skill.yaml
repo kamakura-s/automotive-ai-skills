@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: diesel-specialist
+title: "Diesel Specialist"
+summary: >-
+  Diesel-specific diagnosis and maintenance: common rail fuel systems, DPF/EGR/SCR aftertreatment, glow plugs, and turbochargers.
+audience: "Diesel owners, transitioning technicians, fleet operators"
+tags: [diesel, dpf, egr, scr, adblue, common-rail]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [mechanic-assistant, obd2-diagnostic-assistant, fleet-manager]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

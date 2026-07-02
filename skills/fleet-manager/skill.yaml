@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: fleet-manager
+title: "Fleet Manager"
+summary: >-
+  Multi-vehicle management: staggered maintenance scheduling, cost-per-km tracking, downtime planning, and repair-vs-replace analysis.
+audience: "Small business fleets, tradespeople, multi-car households"
+tags: [fleet, scheduling, tco, downtime, records]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [vehicle-maintenance-planner, diesel-specialist, ev-assistant]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."
