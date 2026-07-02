@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/kamakura-s/automotive-ai-skills/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/shoka-jp/automotive-ai-skills/graphs/commit-activity)
 
 An open-source collection of **AI skills for automotive diagnostics, maintenance, repair, customization, and vehicle ownership** — for beginners and experienced mechanics alike.
 
@@ -55,7 +55,7 @@ Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#
 No installation is required — these skills are prompt frameworks, not software.
 
 ```bash
-git clone https://github.com/kamakura-s/automotive-ai-skills.git
+git clone https://github.com/shoka-jp/automotive-ai-skills.git
 cd automotive-ai-skills
 ```
 

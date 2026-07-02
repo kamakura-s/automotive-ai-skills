@@ -57,7 +57,7 @@
 インストールは不要です。これらのスキルはソフトウェアではなくプロンプトフレームワークです。
 
 ```bash
-git clone https://github.com/kamakura-s/automotive-ai-skills.git
+git clone https://github.com/shoka-jp/automotive-ai-skills.git
 cd automotive-ai-skills
 ```
 

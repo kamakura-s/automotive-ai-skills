@@ -1,0 +1,42 @@
+name: "💡 New Skill Proposal"
+description: "Propose a new automotive AI skill. 新しいスキルの提案(日本語でOKです)"
+title: "[skill]: "
+labels: ["enhancement", "new-skill"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before proposing, please check the [roadmap](../blob/main/README.md#roadmap) and
+        the [Skill Authoring Guide](../blob/main/docs/skill-authoring-guide.md).
+        Proposals are discussed here first, before anyone invests writing effort.
+  - type: input
+    id: name
+    attributes:
+      label: Skill name
+      placeholder: "Diesel Specialist"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and audience
+      description: "What does it cover, and for whom? How is it distinct from existing skills?"
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example prompts it should handle
+      description: "2-3 realistic prompts a user would ask this skill."
+    validations:
+      required: true
+  - type: dropdown
+    id: author
+    attributes:
+      label: Are you willing to write it?
+      options:
+        - "Yes, I'd write it following the authoring guide"
+        - "I can provide domain expertise, but not the writing"
+        - "Proposal only"
+    validations:
+      required: true

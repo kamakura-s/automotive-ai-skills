@@ -9,6 +9,11 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Added
+
+- Issue templates (inaccuracy/safety report, new skill proposal) and a
+  pull request template with the contribution checklist
+
 ### Planned
 
 - Diesel Specialist skill
@@ -40,5 +45,5 @@ invalidates existing links or skill usage patterns.
   self-check checklist and a Japan market guide with terminology glossary
 - MIT license
 
-[Unreleased]: https://github.com/kamakura-s/automotive-ai-skills/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/kamakura-s/automotive-ai-skills/releases/tag/v1.0.0
+[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/shoka-jp/automotive-ai-skills/releases/tag/v1.0.0

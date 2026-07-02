@@ -1,0 +1,43 @@
+name: "🔧 Inaccuracy / Safety Report"
+description: "Report incorrect, misleading, or dangerous automotive content. 技術的な誤り・危険な記述の報告(日本語でOKです)"
+title: "[inaccuracy]: "
+labels: ["inaccuracy"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Accuracy reports are the most valuable contribution to this project. Thank you!
+        **Safety-critical issues** (content that could cause injury if followed) are prioritized above all other work.
+        日本語での報告も歓迎します。
+  - type: input
+    id: location
+    attributes:
+      label: File and section
+      description: "Which file and section contains the problem?"
+      placeholder: "skills/obd2-diagnostic-assistant/README.md — Capabilities"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect or dangerous?
+      description: "Quote the problematic text and explain what's wrong with it."
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: "If you know the correct information, share it — sources or reasoning appreciated."
+    validations:
+      required: false
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "Safety-critical — could cause injury or vehicle damage if followed"
+        - "Misleading — wastes money or time"
+        - "Minor — typo, outdated detail, unclear wording"
+    validations:
+      required: true
