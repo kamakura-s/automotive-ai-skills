@@ -66,20 +66,31 @@
 
 ## インストール
 
-インストールは不要です。これらのスキルはソフトウェアではなくプロンプトフレームワークです。
+読むだけならインストール不要です([`skills/`](./skills/) または[Webサイト](https://shoka-jp.github.io/automotive-ai-skills/)を閲覧)。より深く統合する場合:
+
+### Claude Code(プラグイン — 推奨)
+
+このリポジトリはClaude Codeのプラグインマーケットプレイスです。Claude Code内で:
+
+```text
+/plugin marketplace add shoka-jp/automotive-ai-skills
+/plugin install automotive-ai-skills@automotive-ai-skills
+```
+
+全16スキルがネイティブスキル(各フォルダの`SKILL.md`)としてインストールされ、車の質問をすると自動で発動します。
+
+### OpenAI Codex
+
+このリポジトリのクローン内で`codex`を起動すると`AGENTS.md`が自動で読み込まれます。グローバル設定やスキルごとのスラッシュコマンド化は[Codexガイド](./integrations/codex.md)(英語)を参照。
+
+### その他
 
 ```bash
 git clone https://github.com/shoka-jp/automotive-ai-skills.git
-cd automotive-ai-skills
 ```
 
-GitHub上で [`skills/`](./skills/) フォルダを直接閲覧するだけでも利用できます。
-
-**オプションの活用方法:**
-
-- **Claude Projects / カスタムGPT:** スキルのREADMEをプロジェクト指示やシステムプロンプトに貼り付けて専用アシスタントを作成
-- **Claude Code / エージェントフレームワーク:** スキルREADMEをエージェントスキル定義のベースとして利用
-- **APIアプリケーション:** スキルの「Description + Capabilities + Limitations」をシステムプロンプトの土台として利用
+- **Claude Projects / カスタムGPT:** スキルのREADMEを指示欄に貼り付け([テンプレート](./integrations/claude-project-template.md))
+- **APIアプリケーション / エージェントフレームワーク:** ルーティングには各スキルの`skill.yaml`、知識本体にはREADMEを利用
 
 ## 使い方
 

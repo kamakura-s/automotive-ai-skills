@@ -1,0 +1,20 @@
+{
+  "name": "automotive-ai-skills",
+  "owner": {
+    "name": "Sho Kamakura",
+    "url": "https://github.com/shoka-jp"
+  },
+  "metadata": {
+    "description": "Automotive AI skills for Claude Code — diagnostics, maintenance, repair, EVs, motorcycles, and more.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "automotive-ai-skills",
+      "source": "./",
+      "description": "All 16 automotive skills in one plugin: OBD-II diagnostics, repair, maintenance planning, used-car inspection, troubleshooting, customization, EV, motorcycle, diesel, classic car, fleet, tire & wheel, commercial vehicle, body & paint, towing, and car audio.",
+      "category": "productivity",
+      "keywords": ["automotive", "car", "obd2", "maintenance", "diagnostics"]
+    }
+  ]
+}

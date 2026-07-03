@@ -18,8 +18,13 @@ skills/
 └── your-skill-name/        # kebab-case, descriptive
     ├── README.md           # the skill definition (required core)
     ├── README.ja.md        # Japanese version (required for merged skills)
+    ├── SKILL.md            # Claude Code native skill (see below)
     └── skill.yaml          # machine-readable metadata (see below)
 ```
+
+## Claude Code definition (SKILL.md)
+
+Each skill folder also contains a `SKILL.md` so the repository works as a Claude Code plugin. Keep it thin — frontmatter (`name` matching the folder, `description` stating *when to use* the skill with concrete trigger phrases, `license`) plus the shared operating rules and a pointer to `README.md`, which remains the source of truth. Copy an existing skill's `SKILL.md` and adjust the title and description; do not duplicate README content into it.
 
 ## Machine-readable definitions (skill.yaml)
 

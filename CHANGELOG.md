@@ -9,7 +9,25 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Planned
+
+- Complete Spanish coverage of all skills
+- Motorhome/RV habitation systems skill
+- Welding & fabrication basics skill
+
+## [1.4.0] - 2026-07-03
+
 ### Added
+
+- **Claude Code native support**: `SKILL.md` in every skill folder and a
+  plugin marketplace definition (`.claude-plugin/`) — install with
+  `/plugin marketplace add shoka-jp/automotive-ai-skills` followed by
+  `/plugin install automotive-ai-skills@automotive-ai-skills`
+- **OpenAI Codex support**: repository-level `AGENTS.md` (auto-loaded by
+  Codex, routes questions to skills and enforces safety rules) and a
+  Codex guide (`integrations/codex.md`) covering in-repo, global, and
+  per-skill custom prompt setups
+- Skill Authoring Guide now documents the `SKILL.md` requirement
 
 - GitHub Pages documentation site with SEO metadata (`_config.yml` with
   jekyll-seo-tag and jekyll-sitemap), `robots.txt`, and an `llms.txt`
@@ -19,12 +37,6 @@ invalidates existing links or skill usage patterns.
 - Language auto-routing: browser-language redirect on the landing page
   (ja/es, loop-safe) and automatic `hreflang` alternates across all
   translated page pairs for search-level language targeting
-
-### Planned
-
-- Complete Spanish coverage of all skills
-- Motorhome/RV habitation systems skill
-- Welding & fabrication basics skill
 
 ## [1.3.0] - 2026-07-03
 
@@ -106,7 +118,8 @@ invalidates existing links or skill usage patterns.
   self-check checklist and a Japan market guide with terminology glossary
 - MIT license
 
-[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.0.0...v1.1.0

@@ -62,20 +62,31 @@ Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#
 
 ## Installation
 
-No installation is required — these skills are prompt frameworks, not software.
+No installation is required to read and use the skills — browse [`skills/`](./skills/) or the [website](https://shoka-jp.github.io/automotive-ai-skills/). For deeper integration:
+
+### Claude Code (plugin — recommended)
+
+The repository is a Claude Code plugin marketplace. Inside Claude Code:
+
+```text
+/plugin marketplace add shoka-jp/automotive-ai-skills
+/plugin install automotive-ai-skills@automotive-ai-skills
+```
+
+All 16 skills install as native skills (`SKILL.md` in each skill folder) and trigger automatically when you ask automotive questions.
+
+### OpenAI Codex
+
+`AGENTS.md` is picked up automatically when you run `codex` inside a clone of this repo. For global setup or per-skill slash commands, see the [Codex guide](./integrations/codex.md).
+
+### Everything else
 
 ```bash
 git clone https://github.com/shoka-jp/automotive-ai-skills.git
-cd automotive-ai-skills
 ```
 
-Or simply browse the [`skills/`](./skills/) folder on GitHub.
-
-**Optional integrations:**
-
-- **Claude Projects / Custom GPTs:** paste a skill's README into the project instructions or system prompt to create a dedicated assistant.
-- **Claude Code / agent frameworks:** the skill READMEs can serve as the basis for agent skill definitions.
-- **API applications:** use a skill's Description + Capabilities + Limitations sections as a system prompt scaffold.
+- **Claude Projects / Custom GPTs:** paste a skill's README into the project instructions or system prompt — see the [Claude Project template](./integrations/claude-project-template.md).
+- **API applications / agent frameworks:** use each skill's `skill.yaml` for routing metadata and the README as the knowledge payload.
 
 ## Usage
 
