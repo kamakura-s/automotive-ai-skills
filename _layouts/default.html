@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+  {% include theme-init.html %}
 </head>
 <body>
   <header class="shell-header">
@@ -34,9 +35,30 @@
         <a href="{{ '/data/known-issues/' | relative_url }}">Known issues</a>
         <a href="{{ '/examples/' | relative_url }}">Examples</a>
         <a href="https://github.com/shoka-jp/automotive-ai-skills">GitHub</a>
+        {% include theme-toggle.html %}
       </nav>
     </div>
   </header>
+  <div class="docbar">
+    <div class="bar">
+      <span class="doc-tag">Doc</span>
+      <span class="doc-path">{{ page.url }}</span>
+      {%- assign en_sib = nil -%}{%- assign ja_sib = nil -%}{%- assign es_sib = nil -%}
+      {%- for p in sibs -%}
+        {%- assign pbase = p.name | remove: '.ja.md' | remove: '.es.md' | remove: '.md' -%}
+        {%- if pbase == mybase -%}
+          {%- if p.name contains '.ja.md' or p.dir contains '/ja/' -%}{%- assign ja_sib = p -%}
+          {%- elsif p.name contains '.es.md' -%}{%- assign es_sib = p -%}
+          {%- else -%}{%- assign en_sib = p -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      <span class="doc-langs">
+        {%- if en_sib %}<a{% if en_sib.url == page.url %} class="on"{% endif %} href="{{ en_sib.url | relative_url }}" hreflang="en">EN</a>{% endif -%}
+        {%- if ja_sib %}<a{% if ja_sib.url == page.url %} class="on"{% endif %} href="{{ ja_sib.url | relative_url }}" hreflang="ja">JA</a>{% endif -%}
+        {%- if es_sib %}<a{% if es_sib.url == page.url %} class="on"{% endif %} href="{{ es_sib.url | relative_url }}" hreflang="es">ES</a>{% endif -%}
+      </span>
+    </div>
+  </div>
   <main class="doc">
     {{ content }}
   </main>

@@ -1,0 +1,17 @@
+<script>
+  // Set the theme on <html> before first paint. Explicit choice (localStorage)
+  // wins; otherwise follow the OS preference. No-JS visitors get light.
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('aas-theme'); } catch (e) { /* storage blocked */ }
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+    window.aasToggleTheme = function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('aas-theme', next); } catch (e) { /* storage blocked */ }
+    };
+  })();
+</script>

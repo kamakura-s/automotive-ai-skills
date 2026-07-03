@@ -1,7 +1,10 @@
 /* Automotive AI Skills — "factory service manual" design system
-   paper #F4F5F1 · ink #1A2028 · manual blue #2456A6 · safety orange #E8541E · grease #66707D */
+   paper #F4F5F1 · ink #1A2028 · manual blue #2456A6 · safety orange #E8541E · grease #66707D
+   Theme: [data-theme] is set on <html> before paint (theme-init include);
+   dark = "night shift in the garage" — same manual, work-light palette. */
 
 :root {
+  color-scheme: light;
   --paper: #f4f5f1;
   --paper-raised: #fdfdfb;
   --ink: #1a2028;
@@ -12,9 +15,37 @@
   --orange: #e8541e;
   --rule: #c9cdc6;
   --rule-strong: #1a2028;
+  --code-bg: #1a2028;
+  --code-fg: #e8ebe6;
+  --inline-code: #e9ebe5;
+  --card-hover: #ffffff;
+  --caution-a: #f8ede5;
+  --caution-b: #fdf6f0;
+  --shadow: rgba(26, 32, 40, 0.14);
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --display: "Archivo Narrow", "Arial Narrow", system-ui, sans-serif;
   --body: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #12161c;
+  --paper-raised: #1a2028;
+  --ink: #e6e9e3;
+  --ink-soft: #b7bfc7;
+  --grease: #8d97a3;
+  --blue: #7aa5ee;
+  --blue-deep: #a9c5f5;
+  --orange: #ff7038;
+  --rule: #2b333d;
+  --rule-strong: #d6dad1;
+  --code-bg: #0b0e13;
+  --code-fg: #ccd3c9;
+  --inline-code: #232b35;
+  --card-hover: #222a34;
+  --caution-a: #26190f;
+  --caution-b: #1d1410;
+  --shadow: rgba(0, 0, 0, 0.55);
 }
 
 * { box-sizing: border-box; }
@@ -29,6 +60,7 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   -webkit-text-size-adjust: 100%;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 ::selection { background: var(--orange); color: #fff; }
@@ -82,6 +114,60 @@ a:hover { color: var(--blue-deep); }
 }
 .shell-nav a:hover { color: var(--ink); border-bottom-color: var(--orange); }
 
+.theme-toggle {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  padding: 0 0 1px;
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--ink); border-bottom-color: var(--orange); }
+.theme-toggle .tt-light { display: none; }
+:root[data-theme="dark"] .theme-toggle .tt-dark { display: none; }
+:root[data-theme="dark"] .theme-toggle .tt-light { display: inline; }
+
+/* document bar — title block of each service document */
+.docbar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-raised);
+}
+.docbar .bar {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0.45rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--grease);
+}
+.docbar .doc-tag {
+  color: var(--paper);
+  background: var(--blue);
+  padding: 0.05rem 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.docbar .doc-path { overflow-wrap: anywhere; }
+.docbar .doc-langs { margin-left: auto; display: flex; gap: 0.7rem; }
+.docbar .doc-langs a {
+  color: var(--grease);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+.docbar .doc-langs a:hover { color: var(--ink); border-bottom-color: var(--orange); }
+.docbar .doc-langs a.on { color: var(--orange); border-bottom-color: var(--orange); }
+
 .shell-footer {
   border-top: 2px solid var(--rule-strong);
   margin-top: 4rem;
@@ -106,6 +192,7 @@ a:hover { color: var(--blue-deep); }
   max-width: 820px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 1rem;
+  counter-reset: docsec;
 }
 .doc h1, .doc h2, .doc h3, .doc h4 {
   font-family: var(--display);
@@ -129,6 +216,17 @@ a:hover { color: var(--blue-deep); }
   margin: 2.6rem 0 0.8rem;
   padding-top: 0.9rem;
   border-top: 1px solid var(--rule);
+  counter-increment: docsec;
+}
+.doc h2::before {
+  content: counter(docsec, decimal-leading-zero);
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+  margin-right: 0.65rem;
+  vertical-align: 0.4em;
 }
 .doc h3 { font-size: 1.15rem; margin: 1.8rem 0 0.5rem; }
 .doc p, .doc li { color: var(--ink-soft); }
@@ -145,13 +243,13 @@ a:hover { color: var(--blue-deep); }
 .doc code {
   font-family: var(--mono);
   font-size: 0.86em;
-  background: #e9ebe5;
+  background: var(--inline-code);
   padding: 0.1em 0.35em;
   border-radius: 3px;
 }
 .doc pre {
-  background: var(--ink);
-  color: #e8ebe6;
+  background: var(--code-bg);
+  color: var(--code-fg);
   padding: 1rem 1.2rem;
   overflow-x: auto;
   border-radius: 4px;
@@ -228,7 +326,7 @@ a:hover { color: var(--blue-deep); }
   display: inline-block;
   border: 2px solid var(--rule-strong);
   background: var(--paper-raised);
-  box-shadow: 4px 4px 0 rgba(26, 32, 40, 0.14);
+  box-shadow: 4px 4px 0 var(--shadow);
   margin: 0 0 1.8rem;
 }
 .spec-plate table { border-collapse: collapse; }
@@ -260,14 +358,14 @@ a:hover { color: var(--blue-deep); }
   border: 2px solid var(--rule-strong);
 }
 .btn-primary { background: var(--ink); color: var(--paper); }
-.btn-primary:hover { background: var(--blue-deep); border-color: var(--blue-deep); color: #fff; }
+.btn-primary:hover { background: var(--blue-deep); border-color: var(--blue-deep); color: var(--paper); }
 .btn-ghost { background: transparent; color: var(--ink); }
 .btn-ghost:hover { border-color: var(--orange); color: var(--ink); }
 
 /* caution strip */
 .caution {
   border-bottom: 2px solid var(--rule-strong);
-  background: repeating-linear-gradient(-45deg, #f8ede5, #f8ede5 14px, #fdf6f0 14px, #fdf6f0 28px);
+  background: repeating-linear-gradient(-45deg, var(--caution-a), var(--caution-a) 14px, var(--caution-b) 14px, var(--caution-b) 28px);
 }
 .caution .inner {
   max-width: 1080px;
@@ -345,7 +443,7 @@ a:hover { color: var(--blue-deep); }
   gap: 0.3rem;
   transition: background 0.15s ease;
 }
-.skill-card:hover { background: #fff; color: var(--ink); }
+.skill-card:hover { background: var(--card-hover); color: var(--ink); }
 .skill-card .sec {
   font-family: var(--mono);
   font-size: 0.68rem;
