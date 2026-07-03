@@ -188,7 +188,7 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [ ] Motorhome/RV habitation systems skill (water, gas, leisure batteries, solar)
 - [ ] Welding & fabrication basics skill (safety-first, when to outsource)
 
-Have an idea? [Open an issue](../../issues) with the `enhancement` label.
+Have an idea? [Open an issue](https://github.com/shoka-jp/automotive-ai-skills/issues) with the `enhancement` label.
 
 ## Contributing
 

@@ -86,4 +86,4 @@ docs(readme): add Japanese translation note
 
 ## Questions?
 
-Open a [discussion or issue](../../issues). For conduct concerns, see [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md); for security concerns, see [SECURITY.md](./SECURITY.md).
+Open a [discussion or issue](https://github.com/shoka-jp/automotive-ai-skills/issues). For conduct concerns, see [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md); for security concerns, see [SECURITY.md](./SECURITY.md).

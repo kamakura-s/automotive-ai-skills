@@ -79,4 +79,4 @@
 
 ## フィードバック歓迎
 
-日本向け情報の誤り・不足は [Issue](../../../../issues) でお知らせください。日本語でのIssue・Pull Requestも歓迎します(スキル本文の翻訳改善は特に助かります)。手順は [CONTRIBUTING.md](../../CONTRIBUTING.md)(英語)を参照してください。
+日本向け情報の誤り・不足は [Issue](https://github.com/shoka-jp/automotive-ai-skills/issues) でお知らせください。日本語でのIssue・Pull Requestも歓迎します(スキル本文の翻訳改善は特に助かります)。手順は [CONTRIBUTING.md](../../CONTRIBUTING.md)(英語)を参照してください。

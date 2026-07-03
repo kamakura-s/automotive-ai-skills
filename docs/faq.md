@@ -29,7 +29,7 @@ Yes — MIT licensed. Attribution is appreciated but the license only requires p
 
 ### The AI diagnosed my car wrong. Is the skill broken?
 
-Possibly, but check the usual causes first: incomplete context (mileage, recent work, exact symptom conditions), skipping the follow-up questions, or acting before running the discriminating tests. Diagnosis by description is probabilistic — the workflows exist to raise the hit rate, not to guarantee it. If a skill's guidance itself was misleading, please [open an issue](../../issues); accuracy fixes are the most valued contribution.
+Possibly, but check the usual causes first: incomplete context (mileage, recent work, exact symptom conditions), skipping the follow-up questions, or acting before running the discriminating tests. Diagnosis by description is probabilistic — the workflows exist to raise the hit rate, not to guarantee it. If a skill's guidance itself was misleading, please [open an issue](https://github.com/shoka-jp/automotive-ai-skills/issues); accuracy fixes are the most valued contribution.
 
 ### Why do the skills refuse some topics?
 

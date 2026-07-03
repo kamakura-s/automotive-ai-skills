@@ -21,12 +21,12 @@ not zero. We consider the following in scope:
 ## Reporting a Vulnerability
 
 **For dangerous or harmful content:** open a regular
-[GitHub issue](../../issues) — this content is already public, so public
+[GitHub issue](https://github.com/shoka-jp/automotive-ai-skills/issues) — this content is already public, so public
 reporting is appropriate and fastest. Label it `safety` if possible.
 
 **For sensitive matters** (account compromise, coordinated abuse, anything
 you believe should not be public): use
-[GitHub's private vulnerability reporting](../../security/advisories/new)
+[GitHub's private vulnerability reporting](https://github.com/shoka-jp/automotive-ai-skills/security/advisories/new)
 on this repository.
 
 Please include:

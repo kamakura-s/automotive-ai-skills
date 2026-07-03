@@ -33,8 +33,9 @@ defaults:
     values:
       layout: default
 
+# LICENSE is intentionally not excluded: README badges link to ./LICENSE,
+# so it must be published (served as plain text) to avoid a 404.
 exclude:
-  - LICENSE
   - CHANGELOG.md
   - .gitignore
 
