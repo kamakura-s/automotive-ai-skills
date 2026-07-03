@@ -40,6 +40,7 @@
 | [スバル EJ系ターボ リングランド割れ・メタル](./subaru-ej20t-ringland-bearing.ja.md)([EN](./subaru-ej20t-ringland-bearing.md)) | WRX/STI GC8/GDB/GRB、EJ255/257 | 重大 |
 | [日産 RB26 オイルポンプドライブ破損](./nissan-rb26-oil-pump-drive.ja.md)([EN](./nissan-rb26-oil-pump-drive.md)) | スカイラインGT-R BNR32/33/34 | 致命的 |
 | [日産 SR20 チェーンガイドのラトル音](./nissan-sr20det-chain-guide-rattle.ja.md)([EN](./nissan-sr20det-chain-guide-rattle.md)) | S13/S14/S15系ほか(1989〜2002年) | 軽微 |
+| [ホンダ RK系ステップワゴン CVTジャダー](./honda-rk-stepwgn-cvt-judder.ja.md)([EN](./honda-rk-stepwgn-cvt-judder.md)) | RK1/2/5/6(2009〜2015年) | 重大 |
 
 *(この一覧は手動管理です — エントリ追加のPRでは同時にこの表にも行を追加してください。)*
 

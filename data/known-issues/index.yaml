@@ -113,3 +113,14 @@ entries:
     files:
       en: nissan-sr20det-chain-guide-rattle.md
       ja: nissan-sr20det-chain-guide-rattle.ja.md
+  - id: honda-rk-stepwgn-cvt-judder
+    title: "CVT start-clutch judder"
+    make: Honda
+    platform: "R20A 2.0L + start-clutch CVT"
+    models: "Step WGN RK1/RK2, Step WGN Spada RK5/RK6; related Fit GE, Freed GB3/GB4, Stream RN"
+    years: "2009-2015 (earlier/high-mileage cars worst)"
+    severity: major
+    tags: [transmission, cvt, judder, start-clutch, minivan]
+    files:
+      en: honda-rk-stepwgn-cvt-judder.md
+      ja: honda-rk-stepwgn-cvt-judder.ja.md

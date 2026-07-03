@@ -40,6 +40,7 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [subaru-ej20t-ringland-bearing.md](./subaru-ej20t-ringland-bearing.md) | Subaru EJ turbo WRX/STI (GC8/GDB/GRB, EJ255/257) | Major | [あり](./subaru-ej20t-ringland-bearing.ja.md) |
 | [nissan-rb26-oil-pump-drive.md](./nissan-rb26-oil-pump-drive.md) | Nissan Skyline GT-R RB26DETT (BNR32/33/34) | Critical | [あり](./nissan-rb26-oil-pump-drive.ja.md) |
 | [nissan-sr20det-chain-guide-rattle.md](./nissan-sr20det-chain-guide-rattle.md) | Nissan SR20DET/DE (S13/S14/S15 etc., 1989–2002) | Annoyance | [あり](./nissan-sr20det-chain-guide-rattle.ja.md) |
+| [honda-rk-stepwgn-cvt-judder.md](./honda-rk-stepwgn-cvt-judder.md) | Honda Step WGN RK1/2/5/6 (2009–2015) | Major | [あり](./honda-rk-stepwgn-cvt-judder.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*
 

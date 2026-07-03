@@ -18,7 +18,8 @@ invalidates existing links or skill usage patterns.
   compression loss (`mazda-fd3s-13b-rew-compression-loss`), Subaru EJ turbo
   ringland/rod-bearing failure (`subaru-ej20t-ringland-bearing`),
   Nissan RB26 oil pump drive failure (`nissan-rb26-oil-pump-drive`),
-  Nissan SR20 timing chain guide rattle (`nissan-sr20det-chain-guide-rattle`)
+  Nissan SR20 timing chain guide rattle (`nissan-sr20det-chain-guide-rattle`),
+  Honda RK Step WGN CVT start-clutch judder (`honda-rk-stepwgn-cvt-judder`)
 
 ### Planned
 
