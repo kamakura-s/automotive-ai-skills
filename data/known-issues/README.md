@@ -38,6 +38,8 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [toyota-zvw30-prius-egr-head-gasket.md](./toyota-zvw30-prius-egr-head-gasket.md) | Toyota Prius ZVW30 / 2ZR-FXE (2009–2015) | Major | [あり](./toyota-zvw30-prius-egr-head-gasket.ja.md) |
 | [mazda-fd3s-13b-rew-compression-loss.md](./mazda-fd3s-13b-rew-compression-loss.md) | Mazda RX-7 FD3S / 13B-REW (1991–2002, all years) | Major | [あり](./mazda-fd3s-13b-rew-compression-loss.ja.md) |
 | [subaru-ej20t-ringland-bearing.md](./subaru-ej20t-ringland-bearing.md) | Subaru EJ turbo WRX/STI (GC8/GDB/GRB, EJ255/257) | Major | [あり](./subaru-ej20t-ringland-bearing.ja.md) |
+| [nissan-rb26-oil-pump-drive.md](./nissan-rb26-oil-pump-drive.md) | Nissan Skyline GT-R RB26DETT (BNR32/33/34) | Critical | [あり](./nissan-rb26-oil-pump-drive.ja.md) |
+| [nissan-sr20det-chain-guide-rattle.md](./nissan-sr20det-chain-guide-rattle.md) | Nissan SR20DET/DE (S13/S14/S15 etc., 1989–2002) | Annoyance | [あり](./nissan-sr20det-chain-guide-rattle.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*
 

@@ -16,7 +16,9 @@ invalidates existing links or skill usage patterns.
   gasket failure (`toyota-zvw30-prius-egr-head-gasket`)
 - Known-issue entries (EN+JA), JDM sports focus: Mazda FD3S 13B-REW rotary
   compression loss (`mazda-fd3s-13b-rew-compression-loss`), Subaru EJ turbo
-  ringland/rod-bearing failure (`subaru-ej20t-ringland-bearing`)
+  ringland/rod-bearing failure (`subaru-ej20t-ringland-bearing`),
+  Nissan RB26 oil pump drive failure (`nissan-rb26-oil-pump-drive`),
+  Nissan SR20 timing chain guide rattle (`nissan-sr20det-chain-guide-rattle`)
 
 ### Planned
 

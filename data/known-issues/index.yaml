@@ -91,3 +91,25 @@ entries:
     files:
       en: subaru-ej20t-ringland-bearing.md
       ja: subaru-ej20t-ringland-bearing.ja.md
+  - id: nissan-rb26-oil-pump-drive
+    title: "Oil pump drive failure and oil starvation"
+    make: Nissan
+    platform: "RB26DETT 2.6L twin-turbo inline-six"
+    models: "Skyline GT-R BNR32/BCNR33/BNR34; RB26 swaps"
+    years: "1989-2002 (early BNR32 narrow drive collar worst)"
+    severity: critical
+    tags: [engine, oil-pump, oil-starvation, track-use]
+    files:
+      en: nissan-rb26-oil-pump-drive.md
+      ja: nissan-rb26-oil-pump-drive.ja.md
+  - id: nissan-sr20det-chain-guide-rattle
+    title: "Timing chain guide rattle"
+    make: Nissan
+    platform: "SR20DET/SR20DE 2.0L four"
+    models: "Silvia/180SX S13, Silvia S14/S15, Pulsar GTI-R and other SR20 models"
+    years: "1989-2002 (age/mileage-driven, all years)"
+    severity: annoyance
+    tags: [engine, timing-chain, chain-guide, noise]
+    files:
+      en: nissan-sr20det-chain-guide-rattle.md
+      ja: nissan-sr20det-chain-guide-rattle.ja.md
