@@ -9,6 +9,8 @@ An open-source collection of **AI skills for automotive diagnostics, maintenance
 
 **English** | [日本語](./README.ja.md) | [Español](./README.es.md)
 
+📖 **Browse as a website:** [shoka-jp.github.io/automotive-ai-skills](https://shoka-jp.github.io/automotive-ai-skills/)
+
 ---
 
 ## Overview

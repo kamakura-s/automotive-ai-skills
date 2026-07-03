@@ -8,6 +8,8 @@
 
 [English](./README.md) | **日本語** | [Español](./README.es.md)
 
+📖 **Webサイト版:** [shoka-jp.github.io/automotive-ai-skills](https://shoka-jp.github.io/automotive-ai-skills/)
+
 ---
 
 ## 概要

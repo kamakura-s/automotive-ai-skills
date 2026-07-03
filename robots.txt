@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shoka-jp.github.io/automotive-ai-skills/sitemap.xml

@@ -9,6 +9,12 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Added
+
+- GitHub Pages documentation site with SEO metadata (`_config.yml` with
+  jekyll-seo-tag and jekyll-sitemap), `robots.txt`, and an `llms.txt`
+  index for AI/LLM crawlers (generative engine optimization)
+
 ### Planned
 
 - Complete Spanish coverage of all skills

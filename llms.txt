@@ -1,0 +1,49 @@
+# Automotive AI Skills
+
+> Open-source collection of 16 AI skills (structured prompt frameworks) for automotive diagnostics, maintenance, repair, customization, EVs, and motorcycles. Platform-agnostic — works with Claude, ChatGPT, or any capable LLM. Content available in English and Japanese (all skills) and Spanish (core skills). MIT licensed.
+
+Key facts:
+- Each skill defines capabilities, ready-to-use example prompts, a recommended workflow, and honest limitations.
+- Safety-first design: torque specs and capacities are always ranges to verify against factory documentation; brakes, steering, SRS, fuel, and EV high-voltage work is deferred to professionals.
+- The project never provides guidance on defeating emissions controls, safety systems, odometers, or immobilizers.
+- Machine-readable metadata: each skill folder has a skill.yaml; known issues have a structured index.yaml.
+
+## Skills
+
+- [Mechanic Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/mechanic-assistant/): repair procedures, torque spec guidance, tools, system explanations
+- [OBD-II Diagnostic Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/obd2-diagnostic-assistant/): trouble codes (DTC), freeze frame, live data interpretation
+- [Vehicle Maintenance Planner](https://shoka-jp.github.io/automotive-ai-skills/skills/vehicle-maintenance-planner/): preventive maintenance schedules, severe-service adjustments, catch-up plans
+- [Used Car Inspector](https://shoka-jp.github.io/automotive-ai-skills/skills/used-car-inspector/): pre-purchase checklists, red flags, negotiation support
+- [Vehicle Troubleshooting](https://shoka-jp.github.io/automotive-ai-skills/skills/vehicle-troubleshooting/): symptom-first diagnosis — noises, vibrations, smells, leaks, warning lights
+- [Vehicle Customization Advisor](https://shoka-jp.github.io/automotive-ai-skills/skills/vehicle-customization-advisor/): modification planning, fitment math, build order, legality flags
+- [EV Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/ev-assistant/): charging strategy, battery health, range, EV-specific maintenance
+- [Motorcycle Mechanic](https://shoka-jp.github.io/automotive-ai-skills/skills/motorcycle-mechanic/): chains, carbs and EFI, valve clearances, suspension setup
+- [Diesel Specialist](https://shoka-jp.github.io/automotive-ai-skills/skills/diesel-specialist/): common rail, DPF/EGR/SCR (AdBlue), glow plugs, turbos
+- [Classic Car Restorer](https://shoka-jp.github.io/automotive-ai-skills/skills/classic-car-restorer/): points ignition, carburetors, rust assessment, parts sourcing
+- [Fleet Manager](https://shoka-jp.github.io/automotive-ai-skills/skills/fleet-manager/): multi-vehicle scheduling, cost tracking, repair-vs-replace analysis
+- [Tire & Wheel Advisor](https://shoka-jp.github.io/automotive-ai-skills/skills/tire-wheel-advisor/): sizing math, fitment, seasonal strategy, wear diagnosis, TPMS
+- [Commercial Vehicle & Truck Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/commercial-vehicle-assistant/): air brakes, pre-trip inspections, load securing
+- [Body & Paint Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/body-paint-assistant/): dent/scratch assessment, repair paths, paint matching, DIY limits
+- [Towing & Trailer Advisor](https://shoka-jp.github.io/automotive-ai-skills/skills/towing-trailer-advisor/): hitches, tongue weight, trailer wiring and brakes, sway prevention
+- [Car Audio & Electronics Assistant](https://shoka-jp.github.io/automotive-ai-skills/skills/car-audio-electronics/): head units, amps, dash cams, 12V wiring discipline, CAN-bus limits
+
+## Guides
+
+- [Getting Started](https://shoka-jp.github.io/automotive-ai-skills/docs/getting-started.html): five-minute walkthrough from finding the repo to a productive session
+- [FAQ](https://shoka-jp.github.io/automotive-ai-skills/docs/faq.html): trust, accuracy, platform, and usage questions answered directly
+- [Safety Disclaimer](https://shoka-jp.github.io/automotive-ai-skills/docs/safety-disclaimer.html): verification rules and professional-territory boundaries
+- [Skill Authoring Guide](https://shoka-jp.github.io/automotive-ai-skills/docs/skill-authoring-guide.html): required structure and quality bar for new skills
+- [Japan Guide (日本語)](https://shoka-jp.github.io/automotive-ai-skills/docs/ja/japan-guide.html): US-to-Japan reading table, kei cars, terminology glossary
+- [Shaken Checklist (車検, 日本語)](https://shoka-jp.github.io/automotive-ai-skills/docs/ja/shaken-checklist.html): pre-inspection self-check for Japan's vehicle inspection
+
+## Data
+
+- [Known-Issues Database](https://shoka-jp.github.io/automotive-ai-skills/data/known-issues/): community-contributed model-specific issues (BMW N20 timing chain, Toyota 2AZ-FE oil consumption, Subaru EJ25 head gaskets, Honda i-DCD judder), with a machine-readable index.yaml
+- [Example Conversations](https://shoka-jp.github.io/automotive-ai-skills/examples/): annotated full sessions — P0420 diagnosis, used-car inspection, maintenance catch-up plan
+
+## Optional
+
+- [Integrations](https://shoka-jp.github.io/automotive-ai-skills/integrations/): Claude Project template and a combined Garage Assistant system prompt
+- [Japanese README (日本語)](https://shoka-jp.github.io/automotive-ai-skills/README.ja.html)
+- [Spanish README (Español)](https://shoka-jp.github.io/automotive-ai-skills/README.es.html)
+- [GitHub repository](https://github.com/shoka-jp/automotive-ai-skills)

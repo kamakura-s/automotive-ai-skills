@@ -1,0 +1,39 @@
+# GitHub Pages / Jekyll configuration.
+# Renders the repository's Markdown as a documentation site with SEO metadata.
+title: Automotive AI Skills
+tagline: AI skills for car diagnostics, maintenance, repair & EVs
+description: >-
+  Open-source AI skills for automotive diagnostics, maintenance, repair,
+  customization, EVs, and motorcycles — for beginners and pro mechanics.
+  自動車の故障診断・整備・車検・カスタムをAIで支援するオープンソーススキル集。
+url: "https://shoka-jp.github.io"
+baseurl: "/automotive-ai-skills"
+lang: en
+locale: en_US
+
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+# Convert relative .md links to .html so in-repo links work on the site
+relative_links:
+  enabled: true
+  collections: false
+
+# Social/meta used by jekyll-seo-tag
+github_username: shoka-jp
+repository: shoka-jp/automotive-ai-skills
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - LICENSE
+  - CHANGELOG.md
+  - .gitignore
