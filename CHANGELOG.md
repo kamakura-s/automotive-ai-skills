@@ -9,6 +9,12 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Added
+
+- Known-issue entries (EN+JA): Nissan/Jatco CVT premature failure
+  (`nissan-jatco-cvt-failure`), Toyota ZVW30 Prius EGR clogging and head
+  gasket failure (`toyota-zvw30-prius-egr-head-gasket`)
+
 ### Planned
 
 - Complete Spanish coverage of all skills

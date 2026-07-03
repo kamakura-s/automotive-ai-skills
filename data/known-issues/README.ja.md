@@ -34,6 +34,8 @@
 | [トヨタ 2AZ-FE オイル消費](./toyota-2az-fe-oil-consumption.ja.md)([EN](./toyota-2az-fe-oil-consumption.md)) | 2AZ-FE 2.4L(〜2006〜2011年頃) | 重大 |
 | [スバル EJ25 ヘッドガスケット](./subaru-ej25-head-gasket.ja.md)([EN](./subaru-ej25-head-gasket.md)) | SOHC EJ25(〜1999〜2011年頃) | 重大 |
 | [ホンダ i-DCD ジャダー](./honda-idcd-dct-judder.ja.md)([EN](./honda-idcd-dct-judder.md)) | i-DCD搭載ハイブリッド(2013〜2015年中心) | 重大 |
+| [日産(ジヤトコ)CVT 早期故障](./nissan-jatco-cvt-failure.ja.md)([EN](./nissan-jatco-cvt-failure.md)) | ジヤトコ製CVT搭載日産車(〜2003〜2018年頃) | 重大 |
+| [トヨタ 30プリウス EGR詰まり・ヘッドガスケット](./toyota-zvw30-prius-egr-head-gasket.ja.md)([EN](./toyota-zvw30-prius-egr-head-gasket.md)) | ZVW30プリウス / 2ZR-FXE(2009〜2015年) | 重大 |
 
 *(この一覧は手動管理です — エントリ追加のPRでは同時にこの表にも行を追加してください。)*
 

@@ -34,6 +34,8 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [toyota-2az-fe-oil-consumption.md](./toyota-2az-fe-oil-consumption.md) | Toyota 2AZ-FE 2.4L (~2006–2011) | Major | [あり](./toyota-2az-fe-oil-consumption.ja.md) |
 | [subaru-ej25-head-gasket.md](./subaru-ej25-head-gasket.md) | Subaru SOHC EJ25 (~1999–2011) | Major | [あり](./subaru-ej25-head-gasket.ja.md) |
 | [honda-idcd-dct-judder.md](./honda-idcd-dct-judder.md) | Honda i-DCD hybrids (2013–2015 focus) | Major | [あり](./honda-idcd-dct-judder.ja.md) |
+| [nissan-jatco-cvt-failure.md](./nissan-jatco-cvt-failure.md) | Nissan/Jatco CVTs (~2003–2018, worst 2003–2010 & 2013–2016) | Major | [あり](./nissan-jatco-cvt-failure.ja.md) |
+| [toyota-zvw30-prius-egr-head-gasket.md](./toyota-zvw30-prius-egr-head-gasket.md) | Toyota Prius ZVW30 / 2ZR-FXE (2009–2015) | Major | [あり](./toyota-zvw30-prius-egr-head-gasket.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*
 

@@ -47,3 +47,25 @@ entries:
     files:
       en: honda-idcd-dct-judder.md
       ja: honda-idcd-dct-judder.ja.md
+  - id: nissan-jatco-cvt-failure
+    title: "CVT overheating, judder, and premature failure"
+    make: Nissan
+    platform: "Jatco CVT (RE0F09A/RE0F10A/JF011E/JF015E/JF016E)"
+    models: "Serena, X-Trail, Note, Teana, Altima, Rogue, Sentra, Versa, Murano and other CVT Nissans"
+    years: "2003-2018 (worst: 2003-2010 and 2013-2016)"
+    severity: major
+    tags: [transmission, cvt, overheating, judder]
+    files:
+      en: nissan-jatco-cvt-failure.md
+      ja: nissan-jatco-cvt-failure.ja.md
+  - id: toyota-zvw30-prius-egr-head-gasket
+    title: "EGR clogging and head gasket failure"
+    make: Toyota
+    platform: "2ZR-FXE 1.8L hybrid (ZVW30 Prius)"
+    models: "Prius ZVW30; related Prius v/alpha, Lexus CT200h, early Prius PHV"
+    years: "2009-2015 (failures concentrate at ~150,000 km+)"
+    severity: major
+    tags: [engine, egr, head-gasket, hybrid, carbon]
+    files:
+      en: toyota-zvw30-prius-egr-head-gasket.md
+      ja: toyota-zvw30-prius-egr-head-gasket.ja.md
