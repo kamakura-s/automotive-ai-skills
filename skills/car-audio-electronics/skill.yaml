@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: car-audio-electronics
+title: "Car Audio & Electronics Assistant"
+summary: >-
+  Aftermarket audio and 12V electronics: head units, speakers and amps, dash cam hardwiring, power/ground/fusing discipline, and CAN-bus limits.
+audience: "First head-unit swap through multi-amp builds; dash cam installers"
+tags: [car-audio, head-unit, amplifier, dashcam, wiring, can-bus]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [vehicle-customization-advisor, vehicle-troubleshooting, mechanic-assistant]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

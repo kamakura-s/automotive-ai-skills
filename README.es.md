@@ -22,24 +22,28 @@ Cada habilidad define:
 
 Las habilidades son **independientes de la plataforma**: funcionan con Claude, ChatGPT, modelos locales o cualquier asistente de IA capaz. No requieren instalación ni código.
 
-## Habilidades (14)
+## Habilidades (16)
 
-| Habilidad | Qué hace |
-|---|---|
-| 🔧 [Mechanic Assistant](./skills/mechanic-assistant/) | Procedimientos de reparación, pares de apriete, herramientas |
-| 🔌 [OBD-II Diagnostic Assistant](./skills/obd2-diagnostic-assistant/) | Interpretación de códigos de falla, freeze frame y datos en vivo |
-| 📅 [Vehicle Maintenance Planner](./skills/vehicle-maintenance-planner/) | Planes de mantenimiento preventivo personalizados |
-| 🔍 [Used Car Inspector](./skills/used-car-inspector/) | Listas de inspección precompra y apoyo en la negociación |
-| 🩺 [Vehicle Troubleshooting](./skills/vehicle-troubleshooting/) | Diagnóstico por síntomas: ruidos, fugas, vibraciones |
-| 🏁 [Vehicle Customization Advisor](./skills/vehicle-customization-advisor/) | Planificación de modificaciones, cálculos de compatibilidad |
-| ⚡ [EV Assistant](./skills/ev-assistant/) | Carga, salud de la batería, autonomía, mantenimiento de VE |
-| 🏍️ [Motorcycle Mechanic](./skills/motorcycle-mechanic/) | Mantenimiento de motocicletas, carburadores, válvulas |
-| 🛢️ [Diesel Specialist](./skills/diesel-specialist/) | Common rail, DPF/EGR/SCR (AdBlue), calentadores |
-| 🕰️ [Classic Car Restorer](./skills/classic-car-restorer/) | Encendido por platinos, carburadores, óxido, piezas descatalogadas |
-| 🚛 [Fleet Manager](./skills/fleet-manager/) | Gestión de flotas: calendarios, costes, tiempo de inactividad |
-| 🛞 [Tire & Wheel Advisor](./skills/tire-wheel-advisor/) | Cálculo de medidas, estrategia estacional, desgaste, TPMS |
-| 🚚 [Commercial Vehicle & Truck Assistant](./skills/commercial-vehicle-assistant/) | Frenos neumáticos, inspección previa al viaje, sujeción de carga |
-| 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Evaluación de golpes y arañazos, pintura, límites del bricolaje |
+Las cuatro primeras están **disponibles en español** — sigue el enlace de la columna derecha.
+
+| Habilidad | Qué hace | ES |
+|---|---|---|
+| 🔧 [Mechanic Assistant](./skills/mechanic-assistant/) | Procedimientos de reparación, pares de apriete, herramientas | [✔](./skills/mechanic-assistant/README.es.md) |
+| 🔌 [OBD-II Diagnostic Assistant](./skills/obd2-diagnostic-assistant/) | Interpretación de códigos de falla, freeze frame y datos en vivo | [✔](./skills/obd2-diagnostic-assistant/README.es.md) |
+| 📅 [Vehicle Maintenance Planner](./skills/vehicle-maintenance-planner/) | Planes de mantenimiento preventivo personalizados | [✔](./skills/vehicle-maintenance-planner/README.es.md) |
+| 🔍 [Used Car Inspector](./skills/used-car-inspector/) | Listas de inspección precompra y apoyo en la negociación | [✔](./skills/used-car-inspector/README.es.md) |
+| 🩺 [Vehicle Troubleshooting](./skills/vehicle-troubleshooting/) | Diagnóstico por síntomas: ruidos, fugas, vibraciones | — |
+| 🏁 [Vehicle Customization Advisor](./skills/vehicle-customization-advisor/) | Planificación de modificaciones, cálculos de compatibilidad | — |
+| ⚡ [EV Assistant](./skills/ev-assistant/) | Carga, salud de la batería, autonomía, mantenimiento de VE | — |
+| 🏍️ [Motorcycle Mechanic](./skills/motorcycle-mechanic/) | Mantenimiento de motocicletas, carburadores, válvulas | — |
+| 🛢️ [Diesel Specialist](./skills/diesel-specialist/) | Common rail, DPF/EGR/SCR (AdBlue), calentadores | — |
+| 🕰️ [Classic Car Restorer](./skills/classic-car-restorer/) | Encendido por platinos, carburadores, óxido, piezas descatalogadas | — |
+| 🚛 [Fleet Manager](./skills/fleet-manager/) | Gestión de flotas: calendarios, costes, tiempo de inactividad | — |
+| 🛞 [Tire & Wheel Advisor](./skills/tire-wheel-advisor/) | Cálculo de medidas, estrategia estacional, desgaste, TPMS | — |
+| 🚚 [Commercial Vehicle & Truck Assistant](./skills/commercial-vehicle-assistant/) | Frenos neumáticos, inspección previa al viaje, sujeción de carga | — |
+| 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Evaluación de golpes y arañazos, pintura, límites del bricolaje | — |
+| 🪝 [Towing & Trailer Advisor](./skills/towing-trailer-advisor/) | Enganches, peso en punta, cableado y frenos de remolque | — |
+| 🔊 [Car Audio & Electronics Assistant](./skills/car-audio-electronics/) | Radios, amplificadores, dash cams, disciplina de cableado 12V | — |
 
 ## Uso
 
@@ -57,7 +61,7 @@ Estas habilidades ofrecen información general, **no asesoramiento profesional**
 
 ## Estado de la traducción
 
-Por ahora, solo este README está disponible en español; el contenido de las habilidades está en **inglés y japonés**. Las traducciones al español del contenido de las habilidades son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
+Cuatro habilidades principales ya están traducidas al español (ver la tabla); las demás están en **inglés y japonés**. Las traducciones al español de las habilidades restantes son bienvenidas — consulta [CONTRIBUTING.md](./CONTRIBUTING.md) y abre un issue para coordinar.
 
 ## Licencia
 

@@ -1,6 +1,6 @@
 # Skills Index
 
-Each skill is a self-contained folder with a `README.md` describing what it does, what it can help with, example prompts, a recommended workflow, and honest limitations. Every skill also has a Japanese version (`README.ja.md`) in the same folder.
+Each skill is a self-contained folder with a `README.md` describing what it does, what it can help with, example prompts, a recommended workflow, and honest limitations. Every skill also has a Japanese version (`README.ja.md`) in the same folder; a growing subset has Spanish versions (`README.es.md` — currently Mechanic Assistant, OBD-II, Maintenance Planner, Used Car Inspector).
 
 | Skill | Best for | Audience |
 |---|---|---|
@@ -18,6 +18,8 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 | [Tire & Wheel Advisor](./tire-wheel-advisor/) | Sizing math, fitment, seasonal strategy, wear diagnosis, TPMS | Anyone buying tires or wheels |
 | [Commercial Vehicle & Truck Assistant](./commercial-vehicle-assistant/) | Air brakes, pre-trip inspection, load securing, weight awareness | Owner-operators & work-vehicle drivers |
 | [Body & Paint Assistant](./body-paint-assistant/) | Dent/scratch assessment, repair paths, paint matching, DIY limits | Owners, detailers, used-car buyers |
+| [Towing & Trailer Advisor](./towing-trailer-advisor/) | Hitches, tongue weight, trailer wiring/brakes, sway prevention | First-time towers, boat & camper owners |
+| [Car Audio & Electronics Assistant](./car-audio-electronics/) | Head units, amps, dash cams, 12V wiring discipline, CAN limits | Audio DIYers, dash cam installers |
 
 ## Which skill do I need?
 
@@ -34,6 +36,8 @@ Each skill is a self-contained folder with a `README.md` describing what it does
 - **"Tires, wheels, sizing, TPMS"** → Tire & Wheel Advisor
 - **"It's a truck / work vehicle"** → Commercial Vehicle & Truck Assistant
 - **"Dents, scratches, rust, paint"** → Body & Paint Assistant
+- **"I'm towing something"** → Towing & Trailer Advisor
+- **"Stereo, dash cam, 12V wiring"** → Car Audio & Electronics Assistant
 
 Skills are designed to hand off to each other — Troubleshooting narrows the cause, Mechanic Assistant executes the fix, Maintenance Planner prevents the next failure.
 

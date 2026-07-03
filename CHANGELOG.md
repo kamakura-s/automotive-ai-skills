@@ -11,10 +11,26 @@ invalidates existing links or skill usage patterns.
 
 ### Planned
 
-- Towing & trailer skill
-- Car audio & electronics retrofit skill
-- Spanish translations of skill content
-- Structured (YAML) known-issues data format
+- Complete Spanish coverage of all skills
+- Motorhome/RV habitation systems skill
+- Welding & fabrication basics skill
+
+## [1.3.0] - 2026-07-03
+
+### Added
+
+- **2 new skills** (English + Japanese): Towing & Trailer Advisor,
+  Car Audio & Electronics Assistant — 16 skills total
+- **Spanish skill translations** for 4 core skills: Mechanic Assistant,
+  OBD-II Diagnostic Assistant, Vehicle Maintenance Planner, Used Car
+  Inspector (`README.es.md`; registered in each `skill.yaml`)
+- **Machine-readable known-issues index** (`data/known-issues/index.yaml`)
+  with make/platform/years/severity/tags metadata per entry
+
+### Changed
+
+- Garage Assistant combined system prompt routes to the two new skills
+- Known-issues contribution flow now includes updating `index.yaml`
 
 ## [1.2.0] - 2026-07-03
 
@@ -79,7 +95,8 @@ invalidates existing links or skill usage patterns.
   self-check checklist and a Japan market guide with terminology glossary
 - MIT license
 
-[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/shoka-jp/automotive-ai-skills/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/shoka-jp/automotive-ai-skills/releases/tag/v1.0.0

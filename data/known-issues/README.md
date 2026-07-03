@@ -36,3 +36,7 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [honda-idcd-dct-judder.md](./honda-idcd-dct-judder.md) | Honda i-DCD hybrids (2013–2015 focus) | Major | [あり](./honda-idcd-dct-judder.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*
+
+## Machine-readable index
+
+[`index.yaml`](./index.yaml) mirrors the table above with structured metadata (make, platform, years, severity, tags, file paths per language) for programmatic consumption — e.g., filtering entries for a specific vehicle before injecting them into an AI session. When contributing an entry, add it to `index.yaml` in the same PR.

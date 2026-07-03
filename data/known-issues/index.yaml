@@ -1,0 +1,49 @@
+# Machine-readable index of known-issue entries.
+# Add one entry per issue when contributing; keep in sync with README tables.
+# severity: critical (catastrophic/safety) | major (expensive but contained) | annoyance
+schema_version: 1
+entries:
+  - id: bmw-n20-timing-chain
+    title: "Timing chain and oil pump drive chain guide failure"
+    make: BMW
+    platform: "N20/N26 2.0L turbo four"
+    models: "F30 320i/328i, F10 528i, E84 X1, F25 X3 and other N20/N26 models"
+    years: "2011-2015 (approx. production; revised module ~01/2015)"
+    severity: critical
+    tags: [engine, timing-chain, oil-pump]
+    files:
+      en: bmw-n20-timing-chain.md
+      ja: bmw-n20-timing-chain.ja.md
+  - id: toyota-2az-fe-oil-consumption
+    title: "Excessive oil consumption (piston oil control rings)"
+    make: Toyota
+    platform: "2AZ-FE 2.4L four"
+    models: "Camry, RAV4, Scion tC/xB and other 2AZ-FE models"
+    years: "2006-2011 (approx. production)"
+    severity: major
+    tags: [engine, oil-consumption, pistons]
+    files:
+      en: toyota-2az-fe-oil-consumption.md
+      ja: toyota-2az-fe-oil-consumption.ja.md
+  - id: subaru-ej25-head-gasket
+    title: "External head gasket leaks (SOHC EJ25)"
+    make: Subaru
+    platform: "EJ251/EJ252/EJ253 2.5L SOHC flat-four"
+    models: "Legacy/Outback, Forester, Impreza (non-turbo)"
+    years: "1999-2011 (approx., model-dependent)"
+    severity: major
+    tags: [engine, head-gasket, coolant]
+    files:
+      en: subaru-ej25-head-gasket.md
+      ja: subaru-ej25-head-gasket.ja.md
+  - id: honda-idcd-dct-judder
+    title: "i-DCD 7-speed DCT judder and engagement faults"
+    make: Honda
+    platform: "i-DCD hybrid (7-speed dual-clutch with integrated motor)"
+    models: "Fit Hybrid GP5/GP6, Vezel Hybrid RU3/RU4, Grace, Shuttle, Freed Hybrid"
+    years: "2013-2015 (focus; campaigns continued after)"
+    severity: major
+    tags: [transmission, dct, hybrid, recall]
+    files:
+      en: honda-idcd-dct-judder.md
+      ja: honda-idcd-dct-judder.ja.md

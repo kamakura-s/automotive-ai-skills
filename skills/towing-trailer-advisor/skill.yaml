@@ -1,0 +1,14 @@
+# Machine-readable skill definition for agent frameworks.
+# Schema documented in docs/skill-authoring-guide.md
+schema_version: 1
+name: towing-trailer-advisor
+title: "Towing & Trailer Advisor"
+summary: >-
+  Safe towing: hitch selection and ratings, tongue weight and loading, trailer wiring and brake controllers, sway prevention, and trailer maintenance.
+audience: "First-time towers, boat and camper owners"
+tags: [towing, trailer, hitch, tongue-weight, brake-controller, sway]
+languages:
+  en: README.md
+  ja: README.ja.md
+related: [commercial-vehicle-assistant, tire-wheel-advisor, vehicle-maintenance-planner]
+safety_notes: "Verify all safety-critical specifications against factory documentation. See docs/safety-disclaimer.md."

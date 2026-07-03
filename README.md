@@ -25,7 +25,7 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 
 ## Features
 
-- 🔧 **14 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, trucks, bodywork, and motorcycles
+- 🔧 **16 focused skills** covering diagnostics, repair, maintenance, buying, customization, EVs, diesels, classics, fleets, tires, trucks, bodywork, towing, car audio, and motorcycles
 - 📋 **Structured workflows** that gather the right vehicle context before advising
 - ⚠️ **Safety-first design** — every skill states its limitations and defers safety-critical work appropriately
 - 🧩 **Composable** — skills hand off to each other (troubleshoot → diagnose → repair → maintain)
@@ -51,6 +51,8 @@ The skills are **platform-agnostic**: they work with Claude, ChatGPT, local mode
 | 🛞 [Tire & Wheel Advisor](./skills/tire-wheel-advisor/) | Sizing math, fitment, seasonal strategy, wear diagnosis, TPMS |
 | 🚚 [Commercial Vehicle & Truck Assistant](./skills/commercial-vehicle-assistant/) | Air brakes, pre-trip inspections, load securing, weight awareness |
 | 🎨 [Body & Paint Assistant](./skills/body-paint-assistant/) | Dent/scratch assessment, repair paths, paint matching, DIY limits |
+| 🪝 [Towing & Trailer Advisor](./skills/towing-trailer-advisor/) | Hitches, tongue weight, trailer wiring and brakes, sway prevention |
+| 🔊 [Car Audio & Electronics Assistant](./skills/car-audio-electronics/) | Head units, amps, dash cams, 12V wiring discipline, CAN-bus limits |
 
 Not sure which one? See the ["Which skill do I need?" guide](./skills/README.md#which-skill-do-i-need).
 
@@ -129,7 +131,9 @@ automotive-ai-skills/
     ├── fleet-manager/
     ├── tire-wheel-advisor/
     ├── commercial-vehicle-assistant/
-    └── body-paint-assistant/
+    ├── body-paint-assistant/
+    ├── towing-trailer-advisor/
+    └── car-audio-electronics/
 ```
 
 ## Example Conversations
@@ -155,10 +159,13 @@ Full annotated conversations live in [`examples/`](./examples/):
 - [x] Body & Paint Assistant skill (dent assessment, paint matching, DIY correction limits)
 - [x] Known-issues coverage expanded — 4 platforms seeded (BMW N20, Toyota 2AZ-FE, Subaru EJ25, Honda i-DCD), all bilingual; **community entries wanted, ongoing**
 - [x] Additional languages started — Spanish README ([README.es.md](./README.es.md)); skill-content translations community-driven
-- [ ] Towing & trailer skill (hitches, wiring, sway control, loading)
-- [ ] Car audio & electronics retrofit skill (head units, wiring, CAN integration awareness)
-- [ ] Spanish translations of skill content (contributors welcome)
-- [ ] Structured known-issues data format (YAML) for programmatic consumption
+- [x] Towing & Trailer Advisor skill (hitches, tongue weight, wiring, sway)
+- [x] Car Audio & Electronics Assistant skill (head units, 12V discipline, CAN awareness)
+- [x] Spanish skill translations started — 4 core skills done (Mechanic, OBD-II, Maintenance Planner, Used Car Inspector); **remaining 12 welcome from contributors**
+- [x] Structured known-issues data format — [`data/known-issues/index.yaml`](./data/known-issues/index.yaml)
+- [ ] Complete Spanish coverage of all skills
+- [ ] Motorhome/RV habitation systems skill (water, gas, leisure batteries, solar)
+- [ ] Welding & fabrication basics skill (safety-first, when to outsource)
 
 Have an idea? [Open an issue](../../issues) with the `enhancement` label.
 
