@@ -1,5 +1,7 @@
 # Known-Issues Database
 
+**English** | [日本語](./README.ja.md)
+
 A community-contributed collection of **model-specific known issues** — the "everyone in the owners' club knows this" knowledge that makes the skills dramatically more useful for a specific vehicle.
 
 Each entry is one Markdown file describing one issue on one platform (model/generation/engine). Entries are designed to be pasted into an AI session alongside a skill, or read directly by a buyer or owner.
@@ -22,12 +24,12 @@ Copy [`TEMPLATE.md`](./TEMPLATE.md), fill in every section, and open a PR. Requi
 - **Note your sources** in general terms (owner communities, TSB numbers, personal shop experience). No copyrighted text dumps.
 - Entries about **defeating emissions or safety systems are not accepted** (see [CONTRIBUTING.md](../../CONTRIBUTING.md)).
 
-Japanese-language entries are welcome — use the same template with a `.ja.md` suffix.
+Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.md) and a `.ja.md` suffix. Entries for Japan-market vehicles (kei cars, JDM-only models) are especially valuable.
 
 ## Current entries
 
-| Entry | Vehicle scope | Severity |
-|---|---|---|
-| [bmw-n20-timing-chain.md](./bmw-n20-timing-chain.md) | BMW N20/N26 2.0T (2011–2015-ish production) | Critical |
+| Entry | Vehicle scope | Severity | 日本語 |
+|---|---|---|---|
+| [bmw-n20-timing-chain.md](./bmw-n20-timing-chain.md) | BMW N20/N26 2.0T (2011–2015-ish production) | Critical | [あり](./bmw-n20-timing-chain.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*

@@ -9,6 +9,12 @@ invalidates existing links or skill usage patterns.
 
 ## [Unreleased]
 
+### Added
+
+- Japanese version of the known-issues database: contribution guide
+  (`README.ja.md`), entry template (`TEMPLATE.ja.md`), and a Japanese
+  translation of the BMW N20 entry
+
 ### Planned
 
 - Commercial vehicle / truck skill
