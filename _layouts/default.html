@@ -5,6 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  {%- comment -%} hreflang alternates: pair README.md / README.ja.md / README.es.md
+      (and foo.md / foo.ja.md) siblings in the same directory. {%- endcomment -%}
+  {%- assign mybase = page.name | remove: '.ja.md' | remove: '.es.md' | remove: '.md' -%}
+  {%- assign sibs = site.pages | where: 'dir', page.dir -%}
+  {%- for p in sibs -%}
+    {%- assign pbase = p.name | remove: '.ja.md' | remove: '.es.md' | remove: '.md' -%}
+    {%- if pbase == mybase -%}
+      {%- assign plang = 'en' -%}
+      {%- if p.name contains '.ja.md' or p.dir contains '/ja/' -%}{%- assign plang = 'ja' -%}
+      {%- elsif p.name contains '.es.md' -%}{%- assign plang = 'es' -%}{%- endif %}
+  <link rel="alternate" hreflang="{{ plang }}" href="{{ p.url | absolute_url }}">
+    {%- endif -%}
+  {%- endfor %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;600&display=swap">

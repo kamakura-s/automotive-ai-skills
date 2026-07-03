@@ -14,6 +14,11 @@ invalidates existing links or skill usage patterns.
 - GitHub Pages documentation site with SEO metadata (`_config.yml` with
   jekyll-seo-tag and jekyll-sitemap), `robots.txt`, and an `llms.txt`
   index for AI/LLM crawlers (generative engine optimization)
+- Custom site design in a factory-service-manual visual language
+  (spec-plate hero, 16-section skill index, shared docs layout)
+- Language auto-routing: browser-language redirect on the landing page
+  (ja/es, loop-safe) and automatic `hreflang` alternates across all
+  translated page pairs for search-level language targeting
 
 ### Planned
 
