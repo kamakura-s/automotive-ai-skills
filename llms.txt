@@ -47,3 +47,4 @@ Key facts:
 - [Japanese README (日本語)](https://shoka-jp.github.io/automotive-ai-skills/README.ja.html)
 - [Spanish README (Español)](https://shoka-jp.github.io/automotive-ai-skills/README.es.html)
 - [GitHub repository](https://github.com/shoka-jp/automotive-ai-skills)
+- [obd2-mcp](https://github.com/shoka-jp/obd2-mcp): companion MCP server that reads real vehicles (DTCs, live data, freeze frame, VIN) via ELM327 adapters; mock vehicle included

@@ -83,6 +83,14 @@
 
 このリポジトリのクローン内で`codex`を起動すると`AGENTS.md`が自動で読み込まれます。グローバル設定やスキルごとのスラッシュコマンド化は[Codexガイド](./integrations/codex.md)(英語)を参照。
 
+### 実車を読む: obd2-mcp 🔌
+
+このスキル集は「知識」レイヤーです。姉妹プロジェクトの [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) は「道具」レイヤー — 安価なELM327アダプタ経由で、AIが実車の故障コード・ライブデータ・フリーズフレームを直接読めるMCPサーバーです(モック車両同梱なのでハードウェアなしでも試せます):
+
+```bash
+claude mcp add obd2 -- npx -y obd2-mcp
+```
+
 ### その他
 
 ```bash

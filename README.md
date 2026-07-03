@@ -79,6 +79,14 @@ All 16 skills install as native skills (`SKILL.md` in each skill folder) and tri
 
 `AGENTS.md` is picked up automatically when you run `codex` inside a clone of this repo. For global setup or per-skill slash commands, see the [Codex guide](./integrations/codex.md).
 
+### Read your actual car: obd2-mcp 🔌
+
+These skills are the *knowledge* layer. The companion [**obd2-mcp**](https://github.com/shoka-jp/obd2-mcp) MCP server is the *tool* layer — it lets the AI read real trouble codes, live data, and freeze frames from your car through a cheap ELM327 adapter (a mock vehicle is included, so no hardware is needed to try it):
+
+```bash
+claude mcp add obd2 -- npx -y obd2-mcp
+```
+
 ### Everything else
 
 ```bash
