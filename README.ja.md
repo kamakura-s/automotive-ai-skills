@@ -1,6 +1,6 @@
 # 🚗 Automotive AI Skills（自動車AIスキル集）
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
@@ -164,6 +164,6 @@ automotive-ai-skills/
 
 ## ライセンス
 
-[MIT](./LICENSE) © 2026 Sho Kamakura
+[MIT](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE) © 2026 Sho Kamakura
 
 > **注:** 本翻訳は英語版READMEを基にしています。内容に差異がある場合は英語版が優先されます。

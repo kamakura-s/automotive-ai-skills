@@ -19,7 +19,7 @@ No, but it helps for longer sessions. Two modes work well:
 
 ### Is this free to use commercially?
 
-Yes — MIT licensed. Attribution is appreciated but the license only requires preserving the copyright notice. See [LICENSE](../LICENSE).
+Yes — MIT licensed. Attribution is appreciated but the license only requires preserving the copyright notice. See [LICENSE](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE).
 
 ## Trust and accuracy
 

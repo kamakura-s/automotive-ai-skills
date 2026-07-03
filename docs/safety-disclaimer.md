@@ -9,7 +9,7 @@ The skills in this repository help you work with AI assistants on automotive top
 By using these skills you accept that:
 
 - You are responsible for verifying information before acting on it.
-- The authors, contributors, and maintainers of this repository accept **no liability** for damage to vehicles, property, or persons resulting from use of this content, to the maximum extent permitted by law (see [LICENSE](../LICENSE)).
+- The authors, contributors, and maintainers of this repository accept **no liability** for damage to vehicles, property, or persons resulting from use of this content, to the maximum extent permitted by law (see [LICENSE](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)).
 
 ## Always verify against factory documentation
 

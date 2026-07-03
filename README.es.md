@@ -1,6 +1,6 @@
 # 🚗 Automotive AI Skills (Habilidades de IA para Automoción)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
@@ -65,6 +65,6 @@ Cuatro habilidades principales ya están traducidas al español (ver la tabla); 
 
 ## Licencia
 
-[MIT](./LICENSE) © 2026 Sho Kamakura
+[MIT](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE) © 2026 Sho Kamakura
 
 > **Nota:** Esta traducción se basa en el README en inglés, que prevalece en caso de discrepancia.

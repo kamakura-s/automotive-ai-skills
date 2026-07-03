@@ -1,6 +1,6 @@
 # 🚗 Automotive AI Skills
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/shoka-jp/automotive-ai-skills/graphs/commit-activity)
@@ -206,7 +206,7 @@ These skills provide general automotive information, **not professional advice**
 
 ## License
 
-[MIT](./LICENSE) © 2026 Sho Kamakura
+[MIT](https://github.com/shoka-jp/automotive-ai-skills/blob/main/LICENSE) © 2026 Sho Kamakura
 
 ## Recommended GitHub Topics
 
