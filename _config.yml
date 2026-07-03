@@ -37,3 +37,12 @@ exclude:
   - LICENSE
   - CHANGELOG.md
   - .gitignore
+
+# jekyll-optional-front-matter skips README/CONTRIBUTING/CODE_OF_CONDUCT by
+# default, so they were served as raw text/markdown instead of HTML pages.
+# Whitelisting them here (matched by basename at any depth) makes them render
+# and lets jekyll-relative-links rewrite links to them as .html.
+include:
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
