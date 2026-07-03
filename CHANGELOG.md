@@ -14,6 +14,9 @@ invalidates existing links or skill usage patterns.
 - Known-issue entries (EN+JA): Nissan/Jatco CVT premature failure
   (`nissan-jatco-cvt-failure`), Toyota ZVW30 Prius EGR clogging and head
   gasket failure (`toyota-zvw30-prius-egr-head-gasket`)
+- Known-issue entries (EN+JA), JDM sports focus: Mazda FD3S 13B-REW rotary
+  compression loss (`mazda-fd3s-13b-rew-compression-loss`), Subaru EJ turbo
+  ringland/rod-bearing failure (`subaru-ej20t-ringland-bearing`)
 
 ### Planned
 

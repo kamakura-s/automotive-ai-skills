@@ -36,6 +36,8 @@ Japanese-language entries are welcome — use [`TEMPLATE.ja.md`](./TEMPLATE.ja.m
 | [honda-idcd-dct-judder.md](./honda-idcd-dct-judder.md) | Honda i-DCD hybrids (2013–2015 focus) | Major | [あり](./honda-idcd-dct-judder.ja.md) |
 | [nissan-jatco-cvt-failure.md](./nissan-jatco-cvt-failure.md) | Nissan/Jatco CVTs (~2003–2018, worst 2003–2010 & 2013–2016) | Major | [あり](./nissan-jatco-cvt-failure.ja.md) |
 | [toyota-zvw30-prius-egr-head-gasket.md](./toyota-zvw30-prius-egr-head-gasket.md) | Toyota Prius ZVW30 / 2ZR-FXE (2009–2015) | Major | [あり](./toyota-zvw30-prius-egr-head-gasket.ja.md) |
+| [mazda-fd3s-13b-rew-compression-loss.md](./mazda-fd3s-13b-rew-compression-loss.md) | Mazda RX-7 FD3S / 13B-REW (1991–2002, all years) | Major | [あり](./mazda-fd3s-13b-rew-compression-loss.ja.md) |
+| [subaru-ej20t-ringland-bearing.md](./subaru-ej20t-ringland-bearing.md) | Subaru EJ turbo WRX/STI (GC8/GDB/GRB, EJ255/257) | Major | [あり](./subaru-ej20t-ringland-bearing.ja.md) |
 
 *(This index is maintained by hand — add your entry to the table in the same PR.)*
 

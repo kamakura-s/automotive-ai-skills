@@ -69,3 +69,25 @@ entries:
     files:
       en: toyota-zvw30-prius-egr-head-gasket.md
       ja: toyota-zvw30-prius-egr-head-gasket.ja.md
+  - id: mazda-fd3s-13b-rew-compression-loss
+    title: "Rotary compression loss (apex/side/coolant seals)"
+    make: Mazda
+    platform: "13B-REW twin-rotor sequential twin-turbo"
+    models: "RX-7 FD3S"
+    years: "1991-2002 (wear/heat life-limit, all years)"
+    severity: major
+    tags: [engine, rotary, compression, apex-seal, overheating]
+    files:
+      en: mazda-fd3s-13b-rew-compression-loss.md
+      ja: mazda-fd3s-13b-rew-compression-loss.ja.md
+  - id: subaru-ej20t-ringland-bearing
+    title: "Piston ringland cracking and rod bearing failure"
+    make: Subaru
+    platform: "EJ205/EJ207/EJ255/EJ257 turbo flat-four"
+    models: "Impreza WRX/STI GC8, GDA/GDB, GRB/GVB; Legacy/Forester turbo"
+    years: "1992-2014 (risk scales with tune state and use)"
+    severity: major
+    tags: [engine, piston, ringland, bearing, detonation, tuning]
+    files:
+      en: subaru-ej20t-ringland-bearing.md
+      ja: subaru-ej20t-ringland-bearing.ja.md

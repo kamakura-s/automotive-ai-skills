@@ -36,6 +36,8 @@
 | [ホンダ i-DCD ジャダー](./honda-idcd-dct-judder.ja.md)([EN](./honda-idcd-dct-judder.md)) | i-DCD搭載ハイブリッド(2013〜2015年中心) | 重大 |
 | [日産(ジヤトコ)CVT 早期故障](./nissan-jatco-cvt-failure.ja.md)([EN](./nissan-jatco-cvt-failure.md)) | ジヤトコ製CVT搭載日産車(〜2003〜2018年頃) | 重大 |
 | [トヨタ 30プリウス EGR詰まり・ヘッドガスケット](./toyota-zvw30-prius-egr-head-gasket.ja.md)([EN](./toyota-zvw30-prius-egr-head-gasket.md)) | ZVW30プリウス / 2ZR-FXE(2009〜2015年) | 重大 |
+| [マツダ FD3S 13B-REW 圧縮低下](./mazda-fd3s-13b-rew-compression-loss.ja.md)([EN](./mazda-fd3s-13b-rew-compression-loss.md)) | RX-7 FD3S(1991〜2002年、全年式) | 重大 |
+| [スバル EJ系ターボ リングランド割れ・メタル](./subaru-ej20t-ringland-bearing.ja.md)([EN](./subaru-ej20t-ringland-bearing.md)) | WRX/STI GC8/GDB/GRB、EJ255/257 | 重大 |
 
 *(この一覧は手動管理です — エントリ追加のPRでは同時にこの表にも行を追加してください。)*
 
