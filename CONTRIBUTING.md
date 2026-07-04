@@ -66,7 +66,8 @@ Before submitting, confirm:
 - [ ] Limitations section is present and honest
 - [ ] No authoritative safety-critical specs presented without a "verify against factory manual" caveat
 - [ ] `CHANGELOG.md` updated under **[Unreleased]** for user-visible changes
-- [ ] Skills index (`skills/README.md`) and main README table updated if a skill was added/renamed
+- [ ] Substantive changes to an English skill README are mirrored in its `README.ja.md` (or flagged in the PR)
+- [ ] If a skill was added/renamed, all indexes are updated: `skills/README.md`, `README.md`, `README.ja.md`, `index.html` (landing-page skill grid), and `llms.txt`
 
 ## Commit Messages
 

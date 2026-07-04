@@ -21,6 +21,19 @@ invalidates existing links or skill usage patterns.
   Nissan SR20 timing chain guide rattle (`nissan-sr20det-chain-guide-rattle`),
   Honda RK Step WGN CVT start-clutch judder (`honda-rk-stepwgn-cvt-judder`)
 
+### Fixed
+
+- `.claude-plugin/marketplace.json` version synced with `plugin.json` (was
+  stuck at 1.0.0 since the 1.1.0 release)
+- Repository-structure trees in `README.md`/`README.ja.md` said "12 skills"
+  and omitted `SKILL.md` from the per-skill file list (now 16 skills, 4 files)
+- Known-issues counts in `llms.txt` and both README roadmaps updated from
+  "4 platforms" to the current 11 entries
+- `CONTRIBUTING.md` PR checklist now lists the full index-sync set
+  (`README.ja.md`, `index.html`, `llms.txt`) and the Japanese-mirror rule,
+  matching `AGENTS.md`
+- `SKILL.md` of the 4 Spanish-translated skills now mentions `README.es.md`
+
 ### Planned
 
 - Complete Spanish coverage of all skills

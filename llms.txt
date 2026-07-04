@@ -38,7 +38,7 @@ Key facts:
 
 ## Data
 
-- [Known-Issues Database](https://shoka-jp.github.io/automotive-ai-skills/data/known-issues/): community-contributed model-specific issues (BMW N20 timing chain, Toyota 2AZ-FE oil consumption, Subaru EJ25 head gaskets, Honda i-DCD judder), with a machine-readable index.yaml
+- [Known-Issues Database](https://shoka-jp.github.io/automotive-ai-skills/data/known-issues/): community-contributed model-specific issues — 11 entries covering BMW, Toyota, Subaru, Honda, Nissan, and Mazda (engines, CVTs/DCTs, rotaries) and growing, with a machine-readable index.yaml
 - [Example Conversations](https://shoka-jp.github.io/automotive-ai-skills/examples/): annotated full sessions — P0420 diagnosis, used-car inspection, maintenance catch-up plan
 
 ## Optional

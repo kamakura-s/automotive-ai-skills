@@ -124,7 +124,7 @@ automotive-ai-skills/
 ├── data/known-issues/        # 車種別の既知問題データベース（コミュニティ投稿）
 ├── examples/                 # 会話例（日英）
 ├── integrations/             # Claude Projectテンプレート、統合システムプロンプト
-└── skills/                   # 12スキル（各フォルダに README.md / README.ja.md / skill.yaml）
+└── skills/                   # 16スキル（各フォルダに README.md / README.ja.md / SKILL.md / skill.yaml）
 ```
 
 ## ロードマップ
@@ -140,7 +140,7 @@ automotive-ai-skills/
 - [x] 連携サンプル（[`integrations/`](./integrations/)：Claude Projectテンプレート、統合システムプロンプト）
 - [x] 商用車・トラックスキル（エアブレーキ、運行前点検、固縛）
 - [x] 板金・塗装スキル（へこみ評価、色合わせ、DIYの限界）
-- [x] 既知問題データベースの拡充 — 4プラットフォーム収録（BMW N20、トヨタ2AZ-FE、スバルEJ25、ホンダi-DCD）、すべて日英対応。**投稿は継続募集中**
+- [x] 既知問題データベースの拡充 — 11件収録（BMW・トヨタ・スバル・ホンダ・日産・マツダ）、すべて日英対応・拡充中。**投稿は継続募集中**
 - [x] 他言語への展開開始 — スペイン語README（[README.es.md](./README.es.md)）。スキル本文の翻訳はコミュニティ主導
 - [x] 牽引・トレーラースキル（ヒッチ、垂直荷重、配線、蛇行予防）
 - [x] カーオーディオ・電装スキル（ヘッドユニット、12V配線の規律、CANの基礎）
