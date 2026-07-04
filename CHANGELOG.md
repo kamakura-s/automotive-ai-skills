@@ -34,6 +34,16 @@ invalidates existing links or skill usage patterns.
   (`README.ja.md`, `index.html`, `llms.txt`) and the Japanese-mirror rule,
   matching `AGENTS.md`
 - `SKILL.md` of the 4 Spanish-translated skills now mentions `README.es.md`
+- Site SEO: the root README/README.ja/README.es hreflang cluster now points
+  its English (and x-default) alternate at the landing page `/` with absolute
+  URLs, restoring reciprocity with `index.html`; `/README.html` declares a
+  canonical URL of `/`
+- Site: `SKILL.md` pages are no longer published (plugin inputs, not site
+  content); `AGENTS.md`/`SECURITY.md` stay published for inbound links but
+  are excluded from the sitemap and marked `noindex`
+- Site: the GitHub Pages default plugins the site depends on
+  (`jekyll-optional-front-matter`, `jekyll-readme-index`) are now declared
+  explicitly in `_config.yml`
 
 ### Planned
 

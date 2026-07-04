@@ -5,8 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
   {%- comment -%} hreflang alternates: pair README.md / README.ja.md / README.es.md
-      (and foo.md / foo.ja.md) siblings in the same directory. {%- endcomment -%}
+      (and foo.md / foo.ja.md) siblings in the same directory.
+      The English home is the landing page at /, so the root README cluster
+      points its "en" (and x-default) alternate at / instead of /README.html —
+      this keeps the hreflang cluster reciprocal with index.html and consistent
+      with the canonical_url on /README.html. {%- endcomment -%}
   {%- assign mybase = page.name | remove: '.ja.md' | remove: '.es.md' | remove: '.md' -%}
   {%- assign sibs = site.pages | where: 'dir', page.dir -%}
   {%- for p in sibs -%}
@@ -15,7 +20,12 @@
       {%- assign plang = 'en' -%}
       {%- if p.name contains '.ja.md' or p.dir contains '/ja/' -%}{%- assign plang = 'ja' -%}
       {%- elsif p.name contains '.es.md' -%}{%- assign plang = 'es' -%}{%- endif %}
+      {%- if plang == 'en' and p.url == '/README.html' %}
+  <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+      {%- else %}
   <link rel="alternate" hreflang="{{ plang }}" href="{{ p.url | absolute_url }}">
+      {%- endif -%}
     {%- endif -%}
   {%- endfor %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +63,7 @@
         {%- endif -%}
       {%- endfor -%}
       <span class="doc-langs">
-        {%- if en_sib %}<a{% if en_sib.url == page.url %} class="on"{% endif %} href="{{ en_sib.url | relative_url }}" hreflang="en">EN</a>{% endif -%}
+        {%- if en_sib %}<a{% if en_sib.url == page.url %} class="on"{% endif %} href="{% if en_sib.url == '/README.html' %}{{ '/' | relative_url }}{% else %}{{ en_sib.url | relative_url }}{% endif %}" hreflang="en">EN</a>{% endif -%}
         {%- if ja_sib %}<a{% if ja_sib.url == page.url %} class="on"{% endif %} href="{{ ja_sib.url | relative_url }}" hreflang="ja">JA</a>{% endif -%}
         {%- if es_sib %}<a{% if es_sib.url == page.url %} class="on"{% endif %} href="{{ es_sib.url | relative_url }}" hreflang="es">ES</a>{% endif -%}
       </span>

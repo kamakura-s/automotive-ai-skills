@@ -13,10 +13,16 @@ locale: en_US
 
 theme: jekyll-theme-cayman
 
+# jekyll-optional-front-matter (renders no-front-matter .md as pages) and
+# jekyll-readme-index (serves each folder's README.md at the directory URL)
+# are GitHub Pages defaults the whole site depends on — declared explicitly
+# so the dependency is visible and survives a build-environment change.
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
 
 # Convert relative .md links to .html so in-repo links work on the site
 relative_links:
@@ -32,12 +38,40 @@ defaults:
       path: ""
     values:
       layout: default
+  # Root README.md renders at /README.html and duplicates the landing page;
+  # canonicalize it on / via jekyll-seo-tag (no front matter in README.md).
+  - scope:
+      path: "README.md"
+    values:
+      canonical_url: "https://shoka-jp.github.io/automotive-ai-skills/"
+  # AGENTS.md / SECURITY.md stay published (codex.md and CONTRIBUTING.md link
+  # to them) but should not be indexed or listed in the sitemap.
+  - scope:
+      path: "AGENTS.md"
+    values:
+      sitemap: false
+      noindex: true
+  - scope:
+      path: "SECURITY.md"
+    values:
+      sitemap: false
+      noindex: true
+  # Fallback for the SKILL.md exclude below (in case the exclude glob is not
+  # honored by this Jekyll version): keep them out of the sitemap and index.
+  - scope:
+      path: "skills/*/SKILL.md"
+    values:
+      sitemap: false
+      noindex: true
 
 # LICENSE is intentionally not excluded: README badges link to ./LICENSE,
 # so it must be published (served as plain text) to avoid a 404.
+# SKILL.md files are plugin inputs read from git, not site content — they
+# rendered as orphan pages with generic titles, so they are excluded.
 exclude:
   - CHANGELOG.md
   - .gitignore
+  - "skills/*/SKILL.md"
 
 # jekyll-optional-front-matter skips README/CONTRIBUTING/CODE_OF_CONDUCT by
 # default, so they were served as raw text/markdown instead of HTML pages.
