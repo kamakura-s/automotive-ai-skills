@@ -20,6 +20,10 @@ invalidates existing links or skill usage patterns.
   Nissan RB26 oil pump drive failure (`nissan-rb26-oil-pump-drive`),
   Nissan SR20 timing chain guide rattle (`nissan-sr20det-chain-guide-rattle`),
   Honda RK Step WGN CVT start-clutch judder (`honda-rk-stepwgn-cvt-judder`)
+- CI (GitHub Actions): repository consistency checks
+  (`scripts/validate_repo.py` — known-issues index sync, skill folder
+  completeness, plugin version match, skills-table sync), a Jekyll build
+  check, and internal/external link checking with lychee
 
 ### Fixed
 

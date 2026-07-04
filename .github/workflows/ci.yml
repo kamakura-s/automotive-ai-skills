@@ -1,0 +1,58 @@
+# Repository consistency CI: catches the drift this repo is prone to —
+# broken relative links, index.yaml out of sync, version mismatches, and
+# Jekyll build breakage — on every push and pull request.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Repo consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/validate_repo.py
+
+  build:
+    name: Jekyll build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Same builder GitHub Pages uses; validates the site builds, no deploy.
+      - uses: actions/jekyll-build-pages@v1
+
+  links-internal:
+    name: Internal links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Offline mode verifies in-repo relative links only. Markdown files
+      # only: layouts/index.html contain Liquid variables lychee cannot
+      # resolve and would report as false positives.
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --include-fragments "**/*.md"
+          fail: true
+
+  links-external:
+    name: External links (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      # External URLs are checked but never block: forums and vendor pages
+      # rate-limit and flake. Review the step summary when it goes red.
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --scheme https --scheme http "**/*.md"
+          fail: true
