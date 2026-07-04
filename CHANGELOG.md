@@ -24,7 +24,8 @@ invalidates existing links or skill usage patterns.
 ### Fixed
 
 - `.claude-plugin/marketplace.json` version synced with `plugin.json` (was
-  stuck at 1.0.0 since the 1.1.0 release)
+  created at 1.0.0 in the 1.4.0 release commit instead of matching
+  `plugin.json`)
 - Repository-structure trees in `README.md`/`README.ja.md` said "12 skills"
   and omitted `SKILL.md` from the per-skill file list (now 16 skills, 4 files)
 - Known-issues counts in `llms.txt` and both README roadmaps updated from
