@@ -37,7 +37,7 @@ invalidates existing links or skill usage patterns.
 - Site SEO: the root README/README.ja/README.es hreflang cluster now points
   its English (and x-default) alternate at the landing page `/` with absolute
   URLs, restoring reciprocity with `index.html`; `/README.html` declares a
-  canonical URL of `/`
+  canonical URL of `/` and is excluded from the sitemap
 - Site: `SKILL.md` pages are no longer published (plugin inputs, not site
   content); `AGENTS.md`/`SECURITY.md` stay published for inbound links but
   are excluded from the sitemap and marked `noindex`

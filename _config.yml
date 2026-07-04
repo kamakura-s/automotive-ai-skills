@@ -39,11 +39,14 @@ defaults:
     values:
       layout: default
   # Root README.md renders at /README.html and duplicates the landing page;
-  # canonicalize it on / via jekyll-seo-tag (no front matter in README.md).
+  # canonicalize it on / via jekyll-seo-tag (no front matter in README.md)
+  # and keep it out of the sitemap — a page whose canonical points elsewhere
+  # should not be listed. No noindex: that would contradict canonicalization.
   - scope:
       path: "README.md"
     values:
       canonical_url: "https://shoka-jp.github.io/automotive-ai-skills/"
+      sitemap: false
   # AGENTS.md / SECURITY.md stay published (codex.md and CONTRIBUTING.md link
   # to them) but should not be indexed or listed in the sitemap.
   - scope:
